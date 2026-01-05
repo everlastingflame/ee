@@ -1,0 +1,1 @@
+My pursuit to learn electrical engineering on my own, so I'm starting from the barebones (phys1, diffeq, phys2), and then hopefully I will get into more signal analysis projects in the summer. Additionally I made this repo cuz obsidian is very AWESOME and makes u pay for cloud storage. Also learning obsidian is fun, thank you Tom. 
