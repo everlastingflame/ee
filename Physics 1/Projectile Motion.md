@@ -71,5 +71,40 @@ $$
 Which would make the y component just be $a_{y}=-g$
 
 
+**Orbit equation**
 
+Orbit equations do not rely on functions of time, and we can find it by solving the equation for position in terms of the x-component for $t$
+$$
+x(t)=x_{0} +v_{x,0}t
+$$
+$$
+t= \frac{x_{0}+v_{x,0}}{x(t)}
+$$
+We already know the y-component for position with regards to gravity is:
+$$
+y(t)=v_{y,0}+v_{y,0}t-\frac{1}{2}gt^2
+$$
+Since we know what $t$ is, we can substitute it inside of the y-component position equation:
+$$
+y(t)=v_{y,0} +v_{y,0}\left(\frac{x_{0}+v_{x,0}}{x(t)}\right)-\frac{1}{2}g\left(\frac{x_{0}+v_{x,0}}{x(t)}\right)^2
+$$
+Further simplifying this becomes:
+$$
+y(t)=-\frac{1}{2} \frac{g}{v_{x,0}^2}x(t)^2+\left(\frac{gx_{0}}{v^2_{x,0}}+\frac{v_{y,0}}{v_{x,0}} \right)x(t)-\frac{v_{y,0}}{v_{x,0}}x_{0}-\frac{1}{2} \frac{g}{v_{x,0}^2}x_{0}^2+y_{0}
+$$
+This describes parabolic orbit. 
+![[Pasted image 20260105142959.png]]
+The velocity vector is:
+$$
+\vec{v}(t) = \frac{dx(t)}{dt}\hat{i}+\frac{dy(t)}{dt}\hat{j}=v_{x}(t)\hat{i}+v_{y}(t)\hat{j}
+$$
+We can determine the direction of the velocity vector in terms of its components $x(t), y(t)$ at point $(x(t),y(t))$ with the following equation:
+$$
+\theta = \tan^{-1}\left( -\frac{g}{{v_{x,0}^2}}x+ \left( \frac{gx_{0}}{v^2_{x,0}}+\frac{v_{y,0}}{v_{x,0}}\right) \right)
+$$
+
+**The simplified orbit equation is**
+$$
+y(t) = -\frac{1}{2} \frac{g}{v^2_{x,0}}x(t)^2+\frac{v_{x,0}}{v_{y,0}}x(t)
+$$
 
