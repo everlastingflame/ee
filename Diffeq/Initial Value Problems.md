@@ -75,6 +75,6 @@ $$
 & y= x^2
 \end{align}
 $$
-
+Both of these questions were solved with separation of variables. 
 
 
