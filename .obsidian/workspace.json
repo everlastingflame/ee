@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Diffeq/ODEs/Ordinary Differential Equations.md",
+                "file": "Diffeq/ODEs/Seperable Equations.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ordinary Differential Equations"
+              "title": "Seperable Equations"
             }
           }
         ],
@@ -214,14 +214,14 @@
   },
   "active": "49096e18f8088831",
   "lastOpenFiles": [
-    "Diffeq/ODEs/Seperable Equations.md",
     "Diffeq/ODEs/Linear Equations.md",
-    "Diffeq/ODEs/Ordinary Differential Equations.md",
-    "Pasted image 20260108175617.png",
-    "Diffeq/ODEs/Solution curves.md",
-    "Diffeq/Differential Equations.md",
     "Diffeq/ODEs/Initial Value Problems.md",
     "Diffeq/ODEs/Autonomous Differential Equations.md",
+    "Diffeq/ODEs/Seperable Equations.md",
+    "Diffeq/ODEs/Solution curves.md",
+    "Diffeq/ODEs/Ordinary Differential Equations.md",
+    "Pasted image 20260108175617.png",
+    "Diffeq/Differential Equations.md",
     "Physics 1/Projectile Motion.md",
     "Physics 1/Kinematics.md",
     "Physics 1/Hitting the Bucket Example.md",
