@@ -1,4 +1,4 @@
-When solving [[Differential Equations]] we also might seek particular conditions that satisfies $y(x)$, these conditions imposing some value onto the original, unknown equation and its derivatives at a number $x_{0}$. The following is an $n$-th order IVP. 
+When solving [[Ordinary Differential Equations]], we also might seek particular conditions that satisfies $y(x)$, these conditions imposing some value onto the original, unknown equation and its derivatives at a number $x_{0}$. The following is an $n$-th order IVP. 
 
 $$
 \begin{align}
@@ -50,7 +50,7 @@ IVPs have unique solutions when the solutions themselves have only one solution 
 
 Question 15. 1.2 
 
-Find Two solutions through inspection of the IVP. 
+Find Two solutions through inspection of the IVP
 
 $$
 \begin{align}
@@ -75,6 +75,7 @@ $$
 & y= x^2
 \end{align}
 $$
+
 Both of these questions were solved with separation of variables. 
 
 

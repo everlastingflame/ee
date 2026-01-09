@@ -1,0 +1,1 @@
+Partial [[Differential Equations]] as defined previously are DEs that contain partial derivatives with respect to two or more independent variables
