@@ -91,8 +91,36 @@ P(x) &= \frac{3x+1}{x} \\
 \mu(x) &= xe^{3x} \\
 xe^{3x} \frac{dy}{dx}+(3e^{3x}+e^{3x})y &= \frac{1}{x} \\
 \frac{d}{dx}[xe^{3x}y]&=\frac{1}{x} \\
-\int \frac{d}{dx}[xe^{3x}y] \, dy&= \int \frac{1}{x} \,dx \\
+\int \frac{d}{dx}[xe^{3x}y] \, dx&= \int \frac{1}{x} \,dx \\
 xe^{3x}y&= \ln(x) +C  \\
 y&=\frac{\ln(x)+C}{x\exp(3x)}
+\end{align}
+$$
+Interval: $(0, \infty)$
+
+
+Problem 25:
+$$
+\begin{align}
+\frac{dy}{dx}=x+5y, y(0)= 3 \\
+\frac{dy}{dx}-5y = x \\
+P(x) = -5, \mu(x) = e^{-5x} \\
+e^{-5x} \frac{dy}{dx}-5e^{-5x}y=xe^{-5x} \\
+\int\frac{d}{dx}[e^{-5x}y] =\int xe^{-5x} \, dx \\
+e^{-5x}y = -\frac{1}{5}xe^{-5x}-\frac{1}{25}e^{-5x}+C \\
+y=-\frac{1}{5}x-\frac{1}{25}+Ce^{5x} \\
+3 = -\frac{1}{25} +C, \, C = \frac{76}{25}
+\end{align}
+$$
+Problem 27:
+$$
+\begin{align}
+xy'+y=e^x, \, y(1)=2 \\
+y'+\frac{y}{x}=\frac{e^x}{x} \\
+P(x) = \frac{1}{x}, \mu(x) = \exp(\ln(x))=x \\
+xy'+y=e^x  \\
+\int \frac{d}{dx}[xy] = \int e^x \, dx \\
+xy = e^x+C, \, y = \frac{\exp(x)+C}{x} \\
+C = 2-e, y = \frac{\exp(x) +2-e}{x}
 \end{align}
 $$
