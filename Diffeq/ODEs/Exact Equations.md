@@ -56,3 +56,72 @@ g(y)=-y \\
 f(x,y)=x^2y-y, \, \, x^2y-y=c,y=\frac{c}{x^2-1}
 \end{align}
 $$
+
+Sometimes it is possible to find an integrating factor in terms of $\mu(x,y)$ for non-exact differential equations, in the format $\mu(x,y)\,M(x,y)\,dx+\mu(x,y)\,N(x,y)\,dy=0$. If we want to find this $\mu(x,y)$ then the qualifier for exactness is such that: $(\mu M)_{y}=(\mu N)_{x}$. This can be expanded through product rule: 
+$$
+\begin{align}
+\mu_{y}M+\mu M_{y}=\mu_{x}N+\mu N_{x} \\
+\mu_{y}M-\mu_{x}N = (N_{x}-M_{y})\mu  \\
+\mu_{x}N-\mu_{y}M = (M_{y} - N_{x})\mu
+\end{align}
+$$
+Without using PDEs, we can solve the equation by assuming that $\mu$ only relies on one variable, so to proceed, we can have $\mu_{x}= \frac{d\mu}{dx}, \mu_{y}=0$
+$$
+\frac{d\mu}{dx} = \frac{M_{y}-N_{x}}{N}\mu
+$$
+If $\mu$ solely relies on $y$, then we can write:
+$$
+\frac{d\mu}{dy}=\frac{N_{x}-M_{y}}{M}\mu
+$$
+ Both of these equations are linear and separable if we find that this solely depends on either $x$ or $y$. If that is the case, then we can proceed with the integrating factor method, where the integrating factor for both cases respectively will be:
+$$
+\begin{align}
+\mu(x) = \exp \int\left(\frac{M_{y}-N_{x}}{N} \right)\,dx \\
+\mu(y) = \exp \int\left(\frac{N_{x}-M_{y}}{M} \right)\,dy
+\end{align}
+$$
+Example: Non-exact DE made exact:
+
+The equation $xy\, dx +(2x^2+3y^2-20)\,dy = 0$ is not exact, but we can recognize that $M = xy, N= 2x^2+3y^2-20$. We find that the partial derivatives $M_{y} = x, N_{x} = 4x$. If we try to use the quotient where our solution is in terms of x, we get 
+$$
+\frac{M_{y}-N_{x}}{N} = \frac{x-4x}{2x^2+3y^2-20}= \frac{-3x}{2x^2+3y^2-20}
+$$
+This is not helpful, since we want it to only rely on x. However using the other quotient is helpful:
+$$
+\frac{N_{x}-M_{y}}{N} = \frac{4x-x}{xy}= \frac{3x}{xy}=\frac{3}{y}
+$$
+The integrating factor then becomes: $\exp \int\frac{3}{y}\,dy = \exp(\ln y^3)=y^3$
+After multiplying both sides by the integrating factor, we now have an exact equation:
+$$
+xy^4\,dx + (2x^2y^3+3y^5-20y^3)\,dy=0
+$$
+We can verify that this is an exact equation now and solve for a family of solutions. 
+$$
+\begin{align}
+&M(x,y)=xy^4, \, N(x,y)=2x^2y^3+3y^5-20y^3 \\
+&M_{y} = 4xy^3 = N_{x} \\
+&\frac{\partial f}{\partial x} = xy^4, \frac{\partial f}{\partial y}=2x^2y^3+3y^5-20y^3 \\
+&f(x,y)=\int xy^4 \, dx = \frac{x^2y^4}{2} +g(y) \\
+& \frac{\partial f}{\partial y} = {2x^2y^3}+g'(y) \\
+&g'(y) = 2x^2y^3+3y^5-20y^3 -{2x^2y^3} \\
+&g'(y) = 3y^5-20y^3 \\
+&g(y) = \int 3y^5-20y^3 \, dy \\
+&g(y) = \frac{y^6}{2}-5y^4 \\
+& \frac{1}{2}x^2y^4+\frac{1}{2}y^6-5y^4=C
+\end{align}
+$$
+
+
+Question 4:
+$$
+\begin{align}
+\text{Solve: } \, (\sin y-y\sin x)dx+(\cos x+x\cos y)\,dy=0 \\
+M=\sin y-\sin x, \, N=\cos x+x\cos y -y \\
+\frac{\partial f}{\partial x} = \sin y-\sin x \\
+f(x,y)=\int \sin y-\sin x\, dx = x\sin y+y\cos x+g(y) \\
+\frac{\partial f}{\partial y} = x\cos y+\cos x+g'(y) \\
+g'(y)=\cos x+x\cos y-x\cos y-\cos x -y \\
+g'(y)=-y, g(y) = \int-y \, dy = -\frac{y^2}{2} \\
+x\sin y+y\cos x-\frac{1}{2}y^2=C
+\end{align}
+$$
