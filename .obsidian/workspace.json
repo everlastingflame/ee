@@ -23,12 +23,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Diffeq/ODEs/Exact Equations.md",
+                "file": "Diffeq/ODEs/Substitution.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Exact Equations"
+              "title": "Substitution"
             }
           }
         ],
@@ -196,8 +196,10 @@
   },
   "active": "0b7a796c9b5eb6b2",
   "lastOpenFiles": [
-    "Diffeq/ODEs/Bernoulli Equations.md",
+    "Calc/Integration by parts.md",
+    "Calc/Calculus.md",
     "Diffeq/ODEs/Exact Equations.md",
+    "Diffeq/ODEs/Substitution.md",
     "Diffeq/ODEs/Variation of Parameters.md",
     "Diffeq/ODEs/Seperable Equations.md",
     "Diffeq/ODEs/Linear Equations.md",
@@ -210,8 +212,6 @@
     "Optimization",
     "Linear Algebra",
     "Diffeq/ODEs/Autonomous Differential Equations.md",
-    "Calc/Calculus.md",
-    "Calc/Integration by parts.md",
     "Calc",
     "Diffeq/ODEs/Initial Value Problems.md",
     "Pasted image 20260108175617.png",
