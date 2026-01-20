@@ -38,3 +38,40 @@ $$
 $$
 The substitutions where $y=ux$ or $x=vy$ that require $u,v$ to be independent variables allow the equations to reduce to first-order separable differential equations. 
 
+Example:
+
+$$
+\begin{align}
+
+\text{Solve } (x^2+y^2)\,dx + (x^2-xy)\, dy = 0 \\
+M(x,y)=x^2+y^2, \, N(x,y) = x^2-xy \\
+y=ux, dy = udx+xdu \\
+(x^2+(u^2x^2))\,dx+(x^2-x^2u)[udx+xdu] = 0 \\
+x^2(1+u)dx+x^3(1-u)du=0 \\
+\frac{1-u}{1+u}du + \frac{dx}{x}=0 \\
+\left[ -1+ \frac{2}{1+u}\right]du +\frac{dx}{x}=0  \\
+-u+2\ln|1+u|+\ln|x|=\ln|c| \\
+-\frac{y}{x}+2\ln|1+ \frac{y}{x}| + \ln|x| = \ln|c| \\
+\ln| \frac{(x+y)^2}{cx}| = \frac{y}{x}, (x+y)^2=c\exp\left( \frac{y}{x} \right)
+\end{align}
+$$
+### Bernoulli's Equation
+The differential equation
+$$
+\frac{dy}{dx}+P(x)y = f(x)y^n
+$$
+Where $n$ is any real number is called Bernoulli's Equation. $n=1,0$makes the equation linear, and for any other number the substitution $u = y^{1-n}$ reduces any equation into a linear one.
+
+Example:
+$$
+\begin{align}
+\text{Solve } \, x \frac{dy}{dx} +y = x^2y^2 \\
+\frac{dy}{dx} + \frac{1}{x}y = xy^2 \\
+u = y^{1-2} = y^{-1}, y = u^{-1} \\
+\frac{dy}{dx} = \frac{dy}{du} \frac{du}{dx}=-u^{-2} \frac{du}{dx} \\
+\frac{du}{dx} -\frac{1}{x}u=-x \\
+\exp\left( -\int \frac{dx}{x} \right) = \exp(-\ln x)=\exp (x^{-1})=x^{-1} \\
+\frac{d}{dx}[x^{-1}u]=-1 \\
+x^{-1}u = -x+c, u=-x^2 + cx, y = \frac{1}{(-x^2+cx)}
+\end{align}
+$$
