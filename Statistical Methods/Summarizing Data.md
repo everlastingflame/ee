@@ -176,3 +176,15 @@ $$
 $$
 
 
+### Hazard Function Example:
+
+$$
+\begin{align}
+F(t) = 1-\exp((-\alpha t)^\beta) \\
+F'(t) = f(t) \\
+f(t)  =-\alpha\beta t^{\beta-1}\exp((-\alpha t)^\beta) \\
+h(t) = \frac{-\alpha\beta t^{\beta-1}\exp((-\alpha t)^\beta)}{\exp((-\alpha t)^\beta)} \\
+h(t) = -\alpha \beta t^{\beta-1}
+\end{align}
+$$
+
