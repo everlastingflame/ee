@@ -1,3 +1,4 @@
+[[Continuous Distributions]]
 In a Poisson process, if $\alpha + \beta$ events occur in a time interval, then the fraction of that interval until the $\alpha^{th}$ even occurs has a Beta distribution $\text{Beta}(\alpha,\beta)$
 $$
 \begin{align}

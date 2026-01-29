@@ -1,3 +1,4 @@
+[[Statistical Methods]]
 ### Problem 1
 Plot the empirical cumulative distribution function of the following batch of numbers:
 5,7,1,15,2,9,12,9,5,5
