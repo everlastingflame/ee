@@ -115,7 +115,27 @@ E(X) &= \frac{1}{3} \\
 E(X^2) &= Var(X) + E(X)^2 = \frac{2}{9(3\alpha+1)} +\frac{1}{9} \\
 E(X^2) &= \frac{1}{n} \sum_{i=1}^n x_{i}^2 \\
 \frac{2}{9(3\alpha+1)}+\frac{1}{9} &= \frac{1}{n} \sum_{i=1}^n x_{i}^2 \\
-\dots \text{FUCK}
+3+3\alpha &= 9(3\alpha+1)\frac{1}{n}\sum_{i=1}^nx_{i}^2 \\
+1+\alpha &=3(3\alpha+1)\frac{1}{n}\sum_{i=1}^nx_{i}^2 \\
+1+\alpha &=9\alpha\frac{1}{n}\sum_{i=1}^nx_{i}^2+3\frac{1}{n}\sum_{i=1}^nx_{i}^2 \\
+(1+\alpha) \frac{n}{\sum_{i=1}^nx_{i}^2 } &=9\alpha+3 \\
+\frac{n}{\sum_{i=1}^nx_{i}^2 } &=\frac{9\alpha+3}{(\alpha+1)} \\
+\frac{n}{\sum_{i=1}^nx_{i}^2 } &= 9-\frac{6}{\alpha+1} \\
+\frac{6}{\alpha+1} &= 9-\frac{n}{\sum_{i=1}^nx_{i}^2 } \\
+\alpha +1 &= \frac{2}{3} -\frac{6}{n} \sum_{i=1}^n x_{i}^2 \\
+\alpha &= -\frac{1}{3} -\frac{6}{n} \sum_{i=1}^n x_{i}^2
+\end{align}
+$$
+b.) Write out the equation for the MLE of $\alpha$
+
+$$
+\begin{align}
+L(\alpha) &= \prod_{i=1}^n \frac{\Gamma(3\alpha)}{\Gamma(\alpha)\Gamma(2\alpha)}x_{i}^{\alpha-1}(1-x_{i})^{2\alpha-1} \\
+l(\alpha) &=\log\left(\prod_{i=1}^n \frac{\Gamma(3\alpha)}{\Gamma(\alpha)\Gamma(2\alpha)}x_{i}^{\alpha-1}(1-x_{i})^{2\alpha-1}\right) \\
+l(\alpha) &= \sum_{i=1}^n \log\left( \frac{\Gamma(3\alpha)}{\Gamma(\alpha)\Gamma(2\alpha)}x_{i}^{a-1}(1-x_{i})^{2\alpha-1}\right) \\
+l(\alpha) &= \sum_{i=1}^n \log\left( \frac{\Gamma(3\alpha)}{\Gamma(\alpha)\Gamma(2\alpha)}\right) + \log(x_{i}^{\alpha-1})+\log((1-x_{i})^{2\alpha-1}) \\
+l(\alpha) &= n\log\left(  \frac{\Gamma(3\alpha)}{\Gamma(\alpha)\Gamma(2\alpha)} \right) +\sum_{i=1}^n(\alpha-1)\log(x_{i}) +(2\alpha-1)\log(1-x_{i}) \\
+l(\alpha)&=n\log\left(  \frac{\Gamma(3\alpha)}{\Gamma(\alpha)\Gamma(2\alpha)} \right) +n(\alpha-1)\sum_{i=1}^n \log(x_{i}) +n(2\alpha-1)\sum_{i=1}^n\log(1-x_{i})
 \end{align}
 $$
 

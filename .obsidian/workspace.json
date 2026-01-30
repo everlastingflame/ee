@@ -51,20 +51,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Statistical Methods/Parameter Estimation.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Parameter Estimation"
-            }
-          },
-          {
-            "id": "bbeba348ce7369c3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Statistical Methods/Homework 2.md",
                 "mode": "source",
                 "source": false
@@ -74,7 +60,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -236,12 +222,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "bbeba348ce7369c3",
+  "active": "b60a8f92f7799940",
   "lastOpenFiles": [
+    "Statistical Methods/Parameter Estimation.md",
+    "BIA 674/BIA 674.md",
+    "BIA 674/Lecture 1,2.md",
+    "Statistical Methods/Homework 2.md",
+    "BIA 674",
     "Probability/Continuous Probability/Gamma Distribution.md",
     "Probability/Discrete Probability/Poisson Distribution.md",
-    "Statistical Methods/Homework 2.md",
-    "Statistical Methods/Parameter Estimation.md",
     "Statistical Methods/Summarizing Data.md",
     "Statistical Methods/Statistical Methods.md",
     "Statistical Methods/Pasted image 20260125170341.png",
@@ -264,7 +253,6 @@
     "Probability/Continuous Probability/Normal Distribution.md",
     "Probability/Continuous Probability/Uniform Distribution.md",
     "Probability/Continuous Distributions.md",
-    "Probability/Discrete Probability/Hypergeometric Distribution.md",
     "images/Pasted image 20260105142959.png",
     "images/Pasted image 20260108155733.png",
     "images",
@@ -279,7 +267,6 @@
     "Statistics",
     "Probability",
     "Digital Signal Processing",
-    "Optimization",
     "images/Pasted image 20260108175617.png",
     "images/Pasted image 20260108155746.png"
   ]
