@@ -23,12 +23,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Probability/Discrete Probability/Poisson Distribution.md",
+                "file": "Probability/Continuous Probability/Gamma Distribution.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Poisson Distribution"
+              "title": "Gamma Distribution"
             }
           },
           {
@@ -238,13 +238,14 @@
   },
   "active": "bbeba348ce7369c3",
   "lastOpenFiles": [
-    "Statistical Methods/Parameter Estimation.md",
+    "Probability/Continuous Probability/Gamma Distribution.md",
+    "Probability/Discrete Probability/Poisson Distribution.md",
     "Statistical Methods/Homework 2.md",
+    "Statistical Methods/Parameter Estimation.md",
     "Statistical Methods/Summarizing Data.md",
     "Statistical Methods/Statistical Methods.md",
     "Statistical Methods/Pasted image 20260125170341.png",
     "Probability/Discrete Probability/Geometric Distribution.md",
-    "Probability/Discrete Probability/Poisson Distribution.md",
     "Calc/L'Hopital's Rule.md",
     "Calc/Integration by parts.md",
     "Calc/Calculus.md",
@@ -252,7 +253,6 @@
     "Statistical Methods/Homework 1.md",
     "Probability/Discrete Probability/Uniform Distribution.md",
     "Probability/Discrete Probability/Binomial Distribution.md",
-    "Probability/Continuous Probability/Gamma Distribution.md",
     "Probability/Discrete Distributions.md",
     "Probability/Poisson Process.md",
     "Probability/Probability.md",

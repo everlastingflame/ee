@@ -7,7 +7,6 @@ $$
 and assume a random sample $X_{1}, X_{2}, \dots ,X_{n}$
 
 a.) Find the method of moments estimator of $p$
-
 $$
 \begin{align}
 E(X) = \frac{1}{n}\sum_{i=1}^nX_{i}^k \\
@@ -18,7 +17,6 @@ E(X) = \frac{1}{p} \\
 \end{align}
 $$
 b.) Find the MLE of $p$
-
 $$
 \begin{align}
 &L(p) = P(X_{1}=x_{1}) \cdot P(X_{2}=x_{2})\cdot\dots P(X_{n}=x_{n}) \\
@@ -47,7 +45,6 @@ $$
 $$
 
 ### Problem 2
-
 Suppose that $X_{1}, X_{2},\dots X_{n}$ are i.i.d. with density function:
 $$
 \begin{align}
@@ -86,6 +83,43 @@ $$
 L(f) &= \prod_{i=1}^n e^{-(x_{i}-\theta)} \\
 l(f) &= \log\left( \prod e^{-(x_{i}-\theta)} \right) \\
 l(f) &= \sum_{i = 1}^n \log(e^{-(x_{i}-\theta)}) \\
-l(f) &= 
+l(f) &= \sum_{i=1}^n \log\left(  \frac{e^\theta}{e^{x_{i}}}  \right) \\
+&= \sum_{i=1}^n \log(e^\theta) - \log(e^{x_{i}}) \\ 
+&=\sum_{i=1}^n \theta-x_{i}\\
+&= n\theta - \sum_{i=1}^n x_{i} \\
+&= n\theta - \bar{x} \\
+ \frac{\partial f}{\partial \theta} &= n \\
+\hat{\theta}_{\text{MLE}} &= \text{min}(x_{1},x_{2},\dots,x_{n})=x_{1}
 \end{align}
 $$
+
+### Problem 3
+Suppose that $X_{1},X_{2}, \dots , X_{n}$ are i.i.d. random variables on the interval $[0,1]$ with the density function
+$$
+f(x;a) = \frac{\Gamma(3\alpha)}{\Gamma(\alpha)\Gamma(2\alpha)}x^{\alpha-1}(1-x)^{2\alpha-1}
+$$
+where $\Gamma$ is the gamma function and where $\alpha > 0$ is a parameter to be estimated from the
+sample. Given that
+$$
+\begin{align}
+E(X) = \frac{1}{3} \\
+Var(x) = \frac{2}{9(3\alpha+ 1) }
+\end{align}
+$$
+a.) Find the method of moments estimator of $\alpha$ 
+$$
+\begin{align}
+E(X) &= \frac{1}{n} \sum_{i=1}^n x_{i} \\
+E(X^2) &= \frac{1}{n} \sum_{i=1}^n x_{i}^2 \\
+E(X) &= \frac{1}{3} \\
+E(X^2) &= Var(X) + E(X)^2 = \frac{2}{9(3\alpha+1)} +\frac{1}{9} \\
+E(X^2) &= \frac{1}{n} \sum_{i=1}^n x_{i}^2 \\
+\frac{2}{9(3\alpha+1)}+\frac{1}{9} &= \frac{1}{n} \sum_{i=1}^n x_{i}^2 \\
+\dots \text{FUCK}
+\end{align}
+$$
+
+
+
+
+
