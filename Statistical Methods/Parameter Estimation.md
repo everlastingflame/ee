@@ -1,3 +1,4 @@
+[[Statistical Methods]]
 What is a parameter: A fixed unknown numerical value that describes the characteristic of an entire population, usually the $\mu$ or $\sigma$. For example, the two previous parameters can estimate the normal distribution. For the Poisson distribution, this is usually $\lambda$
 
 What's the difference between a parameter and a statistic:
@@ -52,7 +53,6 @@ $$
 $$
 
 The method of moments estimators (MME) $\hat{\theta_{1}},\dots \hat{\theta}_{m}$ are obtained by equating the first $m$ sample moments to the corresponding first $m$ population moments and solving for $\theta_{1}, \dots \theta_{m}$
-
 $$
 \begin{align}
 E(X) =\frac{1}{n} \sum_{i=1}^n X_{i}^k \\
