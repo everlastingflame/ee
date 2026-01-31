@@ -135,9 +135,62 @@ l(\alpha) &=\log\left(\prod_{i=1}^n \frac{\Gamma(3\alpha)}{\Gamma(\alpha)\Gamma(
 l(\alpha) &= \sum_{i=1}^n \log\left( \frac{\Gamma(3\alpha)}{\Gamma(\alpha)\Gamma(2\alpha)}x_{i}^{a-1}(1-x_{i})^{2\alpha-1}\right) \\
 l(\alpha) &= \sum_{i=1}^n \log\left( \frac{\Gamma(3\alpha)}{\Gamma(\alpha)\Gamma(2\alpha)}\right) + \log(x_{i}^{\alpha-1})+\log((1-x_{i})^{2\alpha-1}) \\
 l(\alpha) &= n\log\left(  \frac{\Gamma(3\alpha)}{\Gamma(\alpha)\Gamma(2\alpha)} \right) +\sum_{i=1}^n(\alpha-1)\log(x_{i}) +(2\alpha-1)\log(1-x_{i}) \\
-l(\alpha)&=n\log\left(  \frac{\Gamma(3\alpha)}{\Gamma(\alpha)\Gamma(2\alpha)} \right) +n(\alpha-1)\sum_{i=1}^n \log(x_{i}) +n(2\alpha-1)\sum_{i=1}^n\log(1-x_{i})
+l(\alpha)&=n\log\left(  \frac{\Gamma(3\alpha)}{\Gamma(\alpha)\Gamma(2\alpha)} \right) +n(\alpha-1)\sum_{i=1}^n \log(x_{i}) +n(2\alpha-1)\sum_{i=1}^n\log(1-x_{i}) \\
+l(\alpha) &= n\log\left( \frac{\Gamma(3\alpha)}{\Gamma(\alpha)\Gamma(2\alpha)} \right)+n(\alpha-1) \log(\bar{x})+n(2\alpha-1)\log(1-\bar{x}) \\
+l(\alpha) &= n\log(\Gamma(3\alpha))-n\log(\Gamma(\alpha)) - n\log (\Gamma(2\alpha))
++n(\alpha-1)\log(\bar{x})+n(2\alpha-1)\log(1-\bar{x}) \\
+l'(\alpha) &=n\psi(3\alpha)(3) - n\psi(\alpha) - n\psi(2\alpha)(2) + n\log(\bar{x}) + 2 \log(1-\bar{x}) = 0
 \end{align}
 $$
+
+### Problem 4
+
+Suppose that $X$ is a discrete random variable with $P(X=1) = \theta$ and $P(X=2)=1-\theta$. Three independent observations are made: $x_{1}=1, x_{2} = 2, x_{3}=2$
+
+
+a.) Find the method of moments estimator for $\theta$
+
+$$
+\begin{align}
+E(X) &= \frac{1}{n}(x_{1}+x_{2}+x_{3}) \\
+P(x=1) &=\theta \\
+p(x=2) &= (1-\theta) \\
+E(X) &= \theta+2(1-\theta)+2(1-\theta) \\
+E(X) &= 4-3\theta \\
+4-3\theta &=\frac{1}{n}(x_{1}+x_{2}+x_{3}) \\
+3\theta &=4-\frac{1}{n}(x_{1}+x_{2}+x_{3}) \\
+\bar{\theta}_{\text{MME}} &=\frac{4}{3} - \frac{1}{3n}(x_{1}+x_{2}+x_{3})
+\end{align}
+$$
+b.) Write out and simplify the likelihood function
+$$
+\begin{align} 
+L(\theta) &= P(X=x_{1})\cdot P(X=x_{2}) \cdot P(X=x_{3}) \\
+L(\theta) &= \theta(1-\theta)^2
+\end{align}
+$$
+c.) Find the maximum likelihood estimator for $\theta$
+$$
+\begin{align}
+L(\theta) &= \theta(1-\theta)^2 \\
+l(\theta) &= \log(\theta(1-\theta)^2) \\
+l(\theta) &= \log (\theta)+\log((1-\theta)^2) \\
+l(\theta) &= \log(\theta)+2\log(1-\theta) \\
+l'(\theta) &= \frac{1}{\theta}-\frac{2}{1-\theta} \\
+\frac{1}{\theta}-\frac{2}{1-\theta} &=0 \\
+\frac{1}{\theta}&=\frac{2}{1-\theta} \\
+1-\theta &=2\theta \\
+1&=3\theta \\
+\hat{\theta}_{\text{MLE}} &= \frac{1}{3}
+\end{align}
+$$
+### Problem 5
+
+
+
+
+
+
 
 
 

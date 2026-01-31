@@ -11,24 +11,14 @@
             "id": "7e59ac0a93ee5bd5",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          },
-          {
-            "id": "808ca9ac0ca179d1",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "Probability/Continuous Probability/Gamma Distribution.md",
+                "file": "Statistical Methods/Parameter Estimation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Gamma Distribution"
+              "title": "Parameter Estimation"
             }
           },
           {
@@ -51,16 +41,29 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Statistical Methods/Homework 2.md",
+                "file": "Probability/Combinatorics/Permutation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Homework 2"
+              "title": "Permutation"
+            }
+          },
+          {
+            "id": "33442a9afb2fc8cd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Statistical Methods/Parameter Estimation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Parameter Estimation"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -222,37 +225,38 @@
       "bases:Create new base": false
     }
   },
-  "active": "b60a8f92f7799940",
+  "active": "7e59ac0a93ee5bd5",
   "lastOpenFiles": [
+    "Probability/Discrete Probability/Geometric Distribution.md",
+    "Untitled.canvas",
+    "Statistical Methods/Statistical Methods.md",
+    "Statistical Methods/Summarizing Data.md",
+    "Probability/Random Variable.md",
+    "Probability/Probability.md",
+    "Probability/Poisson Process.md",
+    "Probability/Moment.md",
+    "Probability/Continuous Distributions.md",
+    "Probability/Discrete Distributions.md",
+    "Probability/Discrete Probability/Variance.md",
+    "Probability/Discrete Probability/Expectation.md",
+    "Probability/Discrete Probability/Cumulative Distribution Function.md",
+    "Probability/Discrete Probability/Binomial Distribution.md",
+    "Probability/Continuous Probability/Gamma Distribution.md",
     "Statistical Methods/Parameter Estimation.md",
-    "BIA 674/BIA 674.md",
-    "BIA 674/Lecture 1,2.md",
+    "Discrete probability.md",
+    "Probability/Combinatorics/Permutation.md",
+    "Probability/Combinatorics/Counting.md",
+    "Probability/Combinatorics/Combination.md",
+    "Probability/Combinatorics/Combinatorics.md",
+    "Probability/Combinatorics",
+    "Probability/Untitled.md",
+    "Probability/Discrete Probability/Negative Binomial Distribution.md",
+    "Probability/Discrete Probability/Uniform Distribution.md",
+    "Probability/Discrete Probability/Poisson Distribution.md",
     "Statistical Methods/Homework 2.md",
     "BIA 674",
-    "Probability/Continuous Probability/Gamma Distribution.md",
-    "Probability/Discrete Probability/Poisson Distribution.md",
-    "Statistical Methods/Summarizing Data.md",
-    "Statistical Methods/Statistical Methods.md",
     "Statistical Methods/Pasted image 20260125170341.png",
-    "Probability/Discrete Probability/Geometric Distribution.md",
-    "Calc/L'Hopital's Rule.md",
-    "Calc/Integration by parts.md",
-    "Calc/Calculus.md",
-    "Probability/Moment.md",
-    "Statistical Methods/Homework 1.md",
-    "Probability/Discrete Probability/Uniform Distribution.md",
-    "Probability/Discrete Probability/Binomial Distribution.md",
-    "Probability/Discrete Distributions.md",
-    "Probability/Poisson Process.md",
-    "Probability/Probability.md",
-    "Probability/Continuous Probability/Exponential Distribution.md",
-    "Probability/Discrete Probability/Negative Binomial Distribution.md",
-    "Probability/Continuous Probability/Beta Distribution.md",
     "Pasted image 20260125175359.png",
-    "Diffeq/Differential Equations.md",
-    "Probability/Continuous Probability/Normal Distribution.md",
-    "Probability/Continuous Probability/Uniform Distribution.md",
-    "Probability/Continuous Distributions.md",
     "images/Pasted image 20260105142959.png",
     "images/Pasted image 20260108155733.png",
     "images",
@@ -261,12 +265,10 @@
     "Probability/Continuous Probability",
     "Probability/Discrete Probability",
     "Probability",
-    "Untitled.canvas",
     "Statistical Methods",
     "Untitled.base",
     "Statistics",
     "Probability",
-    "Digital Signal Processing",
     "images/Pasted image 20260108175617.png",
     "images/Pasted image 20260108155746.png"
   ]
