@@ -95,7 +95,7 @@ E(X) = \mu  \\
 \mu = \bar{X} \\
 \hat{\mu}_{MME} = \bar{X} \\
 E(X^2) = \frac{1}{n}(x_{1}^2+x_{2}^2+\dots+X_{n}^2) \\
-xE(x^2) = Var(X) + \mu^2 = \sigma^2 + \mu^2 \\
+E(x^2) = Var(X) + \mu^2 = \sigma^2 + \mu^2 \\
 \sigma^2 + \mu^2 = \frac{1}{n}(x_{1}^2+ x_{2}^2+\dots x_{n}^2) \\
 \sigma^2 + \bar{x}^2 = \frac{1}{n}(x_{1}^2+ x_{2}^2+\dots x_{n}^2) \\
 \sigma^2 = \frac{1}{n}(x_{1}^2+ x_{2}^2+\dots x_{n}^2)-\bar{x}^2 \\

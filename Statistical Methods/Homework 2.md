@@ -186,13 +186,56 @@ l'(\theta) &= \frac{1}{\theta}-\frac{2}{1-\theta} \\
 $$
 ### Problem 5
 
+Given the following observations from a normal random variable:
+
+5.3286 4.1563 3.2107 3.7684
+1.8909 6.4002 3.2011 6.4485
+3.5287 4.6993 0.1982 1.5976
+5.4835 1.8539 4.2036 2.2840
 
 
+What would you guess the mean and variance ($\mu$ and $\sigma^2$)of the normal
+distribution were? Solve this question using two methods: method of moments
+and maximum likelihood method.
+
+Method of moments:
+
+$$
+\begin{align}
+E(X) &= \frac{1}{n}\sum_{i=1}^n x_{i} \\
+E(X) &= \mu \\
+\bar{\mu}_{\text{MME}} &= \bar{x} \\
+\bar{\mu}_{\text{MME}} &= \frac{58.2535}{16} \approx 3.640 \\
+E(X^2) &= \frac{1}{n}\left( \sum_{i=1}^n x_{i}^2 \right) \\
+E(X^2) &= \text{Var}(X) + \mu^2 = \sigma^2 + \mu^2 \\
+\sigma^2 + \bar{x}^2 &= \frac{1}{n}(x_{1}^2+ x_{2}^2+\dots x_{n}^2) \\
+\sigma^2 &= \frac{1}{n}(x_{1}^2+ x_{2}^2+\dots x_{n}^2)-\bar{x}^2 \\
+\sigma &= \sqrt{\frac{1}{n}(x_{1}^2+ x_{2}^2+\dots x_{n}^2)-\bar{x}^2} = \bar{\sigma}_{MME} \\
+\bar{\sigma}_{MME} &= \sqrt{\frac{1}{16}(260.07) - 3.640845^2 }= \sqrt{ 16.254-13.256 } = 1.7315
+\end{align}
+$$
 
 
+Maximum Likelihood Estimation:
 
-
-
-
+$$
+\begin{align}
+f(x; \mu,\sigma) &= \frac{1}{\sigma \sqrt{2 \pi }}\exp\left( - \frac{(x-\mu)^2}{2\sigma^2} \right) \\
+L(\mu, \sigma) &= \prod_{i=1}^n \left[\frac{1}{\sigma \sqrt{2 \pi }}\exp\left( - \frac{(x_{i}-\mu)^2}{2\sigma^2} \right) \right] \\
+L(\mu,\sigma) &= \left(\frac{1}{\sigma \sqrt{ 2\pi }}\right)^n \exp\left( - \frac{\prod_{i=1}^n(x_{i}-\mu)^2}{2\sigma^2} \right)  \\
+l(\mu,\sigma) &= n\log\left( \frac{1}{\sigma \sqrt{ 2\pi }} \right)-\frac{1}{2\sigma^2}\sum_{i=1}^n (x_{i}-\mu)^2 \\
+\frac{\partial l}{\partial \mu} &= \frac{\sum_{i=1}^n x_{i}- n \mu }{\sigma^2} \\
+\frac{\partial l}{\partial \mu} &=0 \\
+\hat{\mu}_{\text{MLE}} &= \bar{x} \\
+\hat{\mu} &\approx3.640 \\
+\frac{\partial l}{\partial \sigma} &= -\frac{n}{\sigma} + \frac{1}{\sigma^3}\sum_{i=1}^n (x_{i}-\mu)^2 \\
+\frac{\partial l}{\partial \sigma} &= 0 \\
+\frac{1}{\sigma^3}\sum_{i=1}^n (x_{i}-\mu)^2 &=\frac{n}{\sigma} \\
+\frac{1}{n}\sum_{i=1}^n(x_{i}-\mu)^2 &=\sigma^2 \\
+\hat{\sigma}_{\text{MLE}} &= \sqrt{ \frac{1}{n} \sum_{i=1}^n(x_{i}-\mu)^2} \\
+\hat{\sigma}_{\text{MLE}} &= \sqrt{ \frac{1}{n} \sum_{i=1}^n(x_{i}-\bar{x})^2}  \\
+\hat{\sigma}_{\text{MLE}} &= 1.731581
+\end{align}
+$$
 
 

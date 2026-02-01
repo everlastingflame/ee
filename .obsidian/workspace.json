@@ -22,48 +22,21 @@
             }
           },
           {
-            "id": "4b8d685370304574",
+            "id": "1ce36522cb724775",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Probability/Discrete Probability/Geometric Distribution.md",
+                "file": "Statistical Methods/Homework 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Geometric Distribution"
-            }
-          },
-          {
-            "id": "b60a8f92f7799940",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Probability/Combinatorics/Permutation.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Permutation"
-            }
-          },
-          {
-            "id": "33442a9afb2fc8cd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Statistical Methods/Parameter Estimation.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Parameter Estimation"
+              "title": "Homework 2"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -225,9 +198,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "7e59ac0a93ee5bd5",
+  "active": "1ce36522cb724775",
   "lastOpenFiles": [
+    "Statistical Methods/Parameter Estimation.md",
+    "Statistical Methods/Homework 2.md",
     "Probability/Discrete Probability/Geometric Distribution.md",
+    "Probability/Combinatorics/Permutation.md",
     "Untitled.canvas",
     "Statistical Methods/Statistical Methods.md",
     "Statistical Methods/Summarizing Data.md",
@@ -242,9 +218,7 @@
     "Probability/Discrete Probability/Cumulative Distribution Function.md",
     "Probability/Discrete Probability/Binomial Distribution.md",
     "Probability/Continuous Probability/Gamma Distribution.md",
-    "Statistical Methods/Parameter Estimation.md",
     "Discrete probability.md",
-    "Probability/Combinatorics/Permutation.md",
     "Probability/Combinatorics/Counting.md",
     "Probability/Combinatorics/Combination.md",
     "Probability/Combinatorics/Combinatorics.md",
@@ -253,7 +227,6 @@
     "Probability/Discrete Probability/Negative Binomial Distribution.md",
     "Probability/Discrete Probability/Uniform Distribution.md",
     "Probability/Discrete Probability/Poisson Distribution.md",
-    "Statistical Methods/Homework 2.md",
     "BIA 674",
     "Statistical Methods/Pasted image 20260125170341.png",
     "Pasted image 20260125175359.png",
