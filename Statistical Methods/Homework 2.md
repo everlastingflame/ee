@@ -237,5 +237,41 @@ l(\mu,\sigma) &= n\log\left( \frac{1}{\sigma \sqrt{ 2\pi }} \right)-\frac{1}{2\s
 \hat{\sigma}_{\text{MLE}} &= 1.731581
 \end{align}
 $$
+### Bonus Question
+It is known that the probability $p$ of tossing heads on an unbalanced coin is either $\frac{1}{4}$ or $\frac{3}{4}$. The coin is tossed twice and a value for $Y$, the number of heads, is observed. For each possible value of $Y$, which of the two values for $p$ $\left( \frac{1}{4}   \text{ or } \frac{3}{4}\right)$ maximizes the probability that $Y=y$? Depending on the value of $y$ actually observed, what is the MLE of $p$?
 
+Value of $p$ that maximizes $Y=y$
+$$
+\begin{align} \\
+(Y=0) &= (1-p)^2 \\
+(Y=1) &= 2p(1-p) \\
+(Y=2) &= p^2 \\
+E(Y) & = 0(1-p)^2 +1(2p(1-p)) +2p^2 \\
+E(Y) &= 2p \\
+E\left( Y=\frac{1}{4} \right) &= \frac{2}{4} = 0.5\\
+E\left( Y=\frac{3}{4} \right) &= \frac{6}{4} = 1.5
+\end{align}
+$$
+MLE of $p$
+
+$$
+\begin{align}
+P(Y=0) &= (1-p)^2 \\
+p=\frac{1}{4} &= \left( \frac{3}{4} \right)^2 = 0.5625 \\
+p=\frac{3}{4} &= \left( \frac{1}{4} \right)^2 = 0.0625 \\
+P(Y=1) &= 2p(1-p)^2 \\
+p =\frac{1}{4} &= \frac{1}{2}\left( \frac{3}{4} \right)^2 =0.28125 \\
+p = \frac{3}{4} &= \frac{6}{4}\left( \frac{1}{4} \right)^2 = 0.09375 \\
+P(Y=2) &= p^2 \\
+p=\frac{1}{4}&= \left( \frac{1}{4} \right)^2 = 0.0625 \\
+p = \frac{3}{4} &= \left( \frac{3}{4} \right)^2 = 0.5625
+\end{align}
+$$
+
+$$
+\hat{p}_{MLE} = \frac{1}{4} \text{ if Y = 0,1}
+$$
+$$
+\hat{p}_{MLE} = \frac{3}{4} \text{ if Y = 2}
+$$
 
