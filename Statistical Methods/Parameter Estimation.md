@@ -189,3 +189,196 @@ l(\mu,\sigma) = \log L(\mu,\sigma) = \log\left( \frac{1}{\sigma \sqrt{ 2\pi }} \
 \frac{\partial l}{\partial \sigma} =\text{ okay now solve it idgaf}
 \end{align}
 $$
+
+### Confidence Intervals from MLEs
+
+Fisher information for $\theta$ for a random sample $x_{1},x_{2}\dots x_{n}$ is defined as:
+$$
+l(\theta) = -E\left(  \frac{\partial^2}{\partial \theta^2} l(\theta) \right)
+$$
+
+The second order derivative depends on one of the random variables, $x_{1},x_{2}\dots x_{n}$
+You treat the parameter $\theta$ as a constant in the second order derivative, making the entire expression in terms of the random variables. 
+Measures the amount of information that the random variables contain with regard to the parameter
+
+MLEs can help find a confidence interval for the parameter $\theta$ The interval $(1-\alpha)100 \%$ is given by 
+$$
+\hat{\theta}_{\text{MLE}} = \pm \frac{z_{\frac{\alpha}{2}}}{\sqrt{ I_{n}(\hat{\theta}_{\text{MLE}}) }}
+$$
+Example: find the confidence interval for a parameter $\lambda$ for the Poisson distribution
+
+$$
+\begin{align}
+x_{1},x_{2}\dots x_{n}, \, \text{i.i.d, follow poisson dis} \, P(\lambda), \text{CI} = (1-\alpha) \\
+\hat{\lambda}_{\text{MLE}} =\bar{X} \\
+\text{I}_{n}(\lambda) = -E\left( \frac{\partial^2}{\partial \theta^2}l(\lambda) \right) \\
+L(\lambda) = \prod_{i=1}^n \frac{\lambda^{x_{i}}e^{-\lambda}}{x_{i}!} \\
+L(\lambda) = \frac{\lambda^{x_{1}+x_{2}+\dots+x_{n}}(e^{-\lambda})^n}{x_{1!}x_{2!}+\dots+x_{n}!} \\
+l(\lambda) = (x_1 +x_{2} +\dots)\ln \lambda - \lambda n - \ln(x_{1}!x_{2}!\dots) \\
+\frac{\partial l}{\partial \lambda} = \sum_{i=1}^n x_{i} \cdot \frac{1}{\lambda} - n \\
+\frac{\partial^2l}{\partial \lambda^2} = \sum_{i=1}^n x_{i} \cdot \left( -\frac{1}{\lambda^2} \right) = -\frac{\sum_{i=1}^n x_{i}}{\lambda^2} \\
+E \left(-\frac{\sum_{i=1}^n x_{i}}{\lambda^2}\right) = E\left(  -\frac{x_{1}}{\lambda^2} - \frac{x_{2}}{\lambda^2} -\dots \right) \\
+=E\left( -\frac{X_{1}}{\lambda^2} \right) + E\left( -\frac{X_{2}}{\lambda^2} \right) + \dots \\
+=-\frac{1}{\lambda^2} E(X_{1})-\frac{1}{\lambda^2}E(X_{2}) \\
+E\left( -\sum_{i=1}^n x_{i} \cdot \frac{1}{\lambda_{2}} \right) = -\frac{1}{\lambda^2} \cdot \lambda \cdot n = -\frac{n}{\lambda} \\
+I_{n}(\lambda) = -E\left( \frac{\partial^2l}{\partial l^2} \right) = -\left( -\frac{n}{\lambda} \right) = \frac{n}{\lambda} \\
+(1-\alpha)100\% = \bar{x}_{\text{MLE}} \pm \frac{z_{\frac{\alpha}{2}}}{\sqrt{ I_{n}(\hat{\theta}_{\text{MLE}}) }} \\
+\bar{x} \pm \frac{z_{\frac{\alpha}{2}}}{\sqrt{ \frac{m}{\bar{x}} }} \\
+\bar{x} \pm \text{didnt finish}
+\end{align}
+$$
+
+Example 10: given a random sample $X_{1}\dots X_{36}$ with sample mean of 10. Assume they follow exp dis with param $\lambda$. Construct a conf interval with $95 \%$
+
+$$
+\begin{align} \\
+\bar{x} =10, \, 95\% \text{ CI, } \alpha=5 \\
+\hat{\lambda}_{\text{MLE}} \pm \frac{z_{\frac{\alpha}{2}}}{\sqrt{ I_{n}(\hat{\lambda}_{\text{MLE}}) }} \\
+\alpha = 0.05 =\frac{\alpha}{2} = 0.025 \\
+z_{\frac{\alpha}{2}} = 1.96, \text{ z table calc} \\
+\hat{\lambda}_{\text{MLE}} = \frac{1}{\bar{x}} = \frac{1}{10} =0.1 \\
+I_{n}(\lambda) -E\left( \frac{\partial^2l}{\partial \lambda^2} \right) \\
+L_{\lambda} = \prod_{i=1}^{36} \lambda e^{-\lambda x_{i}} \\
+L_{\lambda} = \lambda^{36}e^{-\lambda x_{1}-\lambda x_{2}-\dots} \\
+L_{\lambda} = \lambda^{36} \exp\left( -\lambda \sum_{i=1}^{36}x_{i} \right) \\
+l(\lambda) = 36 \ln(\lambda) + \left( -\lambda \sum_{i=1}^{36}x_{i} \right) \\
+\frac{\partial l}{\partial \lambda} = \frac{36}{\lambda} - \sum_{i=1}^{36}x_{i} \\
+\frac{\partial^2 l}{\partial \lambda^2} = -\frac{36}{\lambda^2} \\
+=E\left( -\frac{36}{\lambda^2} \right) \\
+I_{\lambda} = \frac{36}{\lambda^2} \\
+I_{n}(\hat{\lambda}_{\text{MLE}}) = \frac{36}{0.1^2} = 3600 \\
+\text{95\% CI :} \, \left( 0.1 \pm \frac{1.96}{\sqrt{ 3600 }} \right) =(0.0677, 0.133)
+\end{align} 
+$$
+We are 95% confident that $\lambda$ is between these two values.
+### Baye's Rule
+$$
+P(A|B) = \frac{P(B|A)P(A)}{P(B)}
+$$
+For random variables $X$ and $Y$
+$$
+f_{X|Y}(x|y) = \frac{f_{Y|X}(y|x)f_{X}(X)}{f_{Y}(Y)}
+$$
+
+MME/MLE -> $\theta$ exists already, but unknown, so we collect data to make a better guess about the true value of $\theta$ 
+
+Bayesian method -> $\theta$ varies, $\theta$ is a r.v. The pdf of the prior function is updated when we see new data, allowing us to find an updated pdf and create what's called the posterior function. 
+
+### Bayesian Estimators
+
+To estimate the parameter, we can use the function:
+$$
+pdf(\theta|X_{1},\dots ,X_{n}) = \frac{pdf(X_{1},\dots,X_{n}|\theta)pdf(\theta)}{pdf(X_{1},\dots X_{n})}
+$$
+
+The prior is $pdf(\theta)$, the posterior is $pdf(\theta | X_{1},\dots ,X_{n})$, the likelihood function is $pdf(X_{1},\dots X_{N}|\theta)$, the joint pdf is $pdf(X_{1},\dots, X_{n})$
+
+We can find that the posterior function is proportional to the product:
+$$
+f(\theta |X_{1},\dots,X_{n})\propto f(X_{1},\dots ,X_{n}|\theta)\cdot f(\theta)
+$$
+
+Example: Let $X_{1}, X_{2},\dots, X_{n}$ be a random sample from the Bernoulli distribution with parameter $p$ 
+a.) Choose the prior function for $p$, and then find the posterior function of $p$ given the data
+
+$$
+\begin{align}
+\text{Prior distribution : Choose }  \text{Beta}(\alpha,\beta) \text{ for parameter } p \\
+\text{Prior pdf : } f(p; \alpha,\beta) = \frac{1}{B(\alpha,\beta)}p^{\alpha-1}(1-p)^{\beta-1} \\
+\text{Likelihood function : } f(x,p) = p^{x}(1-p)^{1-x}, \, x=0,1 \\
+f(x_{1},\dots , x_{n}|p) = \prod_{i=1}^n (p^{x_{i}}(1-p)^{1-x_{i}}) = p^{x_{1}+x_{2}+\dots}(1-p)^{1-x_{1} +1-x_{2}-\dots} \\
+= p^{\sum^n_{i=1} x_{i}}\cdot(1-p)^{n-\sum_{i=1}^nx_{i}} \\
+\text{Posterior Function: } f(p |x_{1},x_{2},\dots) \propto L(p)\cdot f(p;\alpha,\beta) \\
+= \alpha p^{\sum x_{i}}(1-p)^{n-\sum x_{i}} \cdot \frac{1}{B(\alpha,\beta)}\cdot p^{\alpha-1}(1-p)^{\beta -1} \text{ , we can remove constants} \\
+=\alpha p^{\sum x_{i} + \alpha-1} \cdot(1-p)^{n-\sum x_{i} + \beta -1}, \text{ our posterior function} \\
+\text{Posterior PDF : } \text{Beta} \left( \sum x_{i}+\alpha , n-\sum x_{i} +\beta \right) \\
+\text{Prior PDF : } \text{Beta} (\alpha, \beta)
+\end{align}
+$$
+Q: Why did we use the beta distribution in particular here?
+
+b.)Assume $n = 100$, and $\sum_{i=1}^n X_{i} =30$. If the prior function is Beta(10,10), what is the posterior function?
+
+
+$$
+\begin{align}
+&n = 100, \sum x_{i} = 100,  \\
+&\text{Prior dist: } \text{Beta}(10,10) \\
+&\text{Posterior dist: } \text{Beta}(30 + 10, 100-30+10) = \text{Beta}(40,80) \\
+
+\end{align}
+$$
+
+Example: Assume that $x_{i}$ follows geom distribution. The prior distribution is Beta with parameters $\alpha, \beta$
+
+$$
+\begin{align}
+\text{Prior pdf : } f(p; \alpha,\beta) = \frac{1}{B(\alpha,\beta)}p^{\alpha-1}(1-p)^{\beta - 1} \\
+L(P) = \prod_{i=1}^n (p(1-p)^{x_{i}-1}) = p^n(1-p)^{(x_{1}-1)+(x_{2}-1)+\dots} \\
+= p^n(1-p)^{\sum x_{i}-n} \\
+f(p | x_{1},x_{2},\dots ,x_{n}) \propto p^n(1-p)^{\sum x_{i}-n} \cdot \frac{1}{B(\alpha,\beta)} p^{\alpha - 1}(1-p)^{\beta - 1} \\
+f(p | x_{1,\dots ,x_{n}}) \propto p^{n+\alpha-1}(1-p)^{\sum x_{i}-n + \beta-1} \\
+= \text{Beta}\left( n+\alpha, \sum x_{i} -n +\beta \right) \\
+
+\end{align}
+$$
+
+Means of past distributions = Bayes Posterior Mean Estimator 
+
+Mode of posterior distributions = Max a posterior (MAP) estimator 
+
+Median of posterior distribution = Posterior Median Estimator 
+
+
+Example: Suppose that $X$ is a discrete random variable with $P(X=1) = \theta$ and $P(X=2) = 1-\theta$. Three independent observations of $X$ are made: $x_{1} = 1, x_{2} = 2, x_{3} = 2$
+
+a.) Write out and simplify the likelihood function
+b.) Assume the prior distribution is uniform $[0,1]$
+
+$$
+\begin{align}
+n&=1 \\
+L(\theta) &= P(X=x_{1})\cdot P(X=x_{2})\cdot P(X=x_{3}) \\
+&= P(X=1)\cdot P(X=2) \cdot P(X=2) \\
+&= \theta \cdot (1-\theta)^2 \\
+& \text{Prior:} \, \text{Uniform } [0,1]: 1 \text{ if } 0 \leq \theta \leq 1, 0 \text{ otherwise} \\
+&\text{Posterior: } f(\theta; x_{1},x_{2},\dots x_{n}) \propto L(\theta) \cdot f(\theta) \\
+&\propto \theta(1-\theta)^2 \\
+&\text{Posterior is: } \text{Beta}(2,3) \\
+\text{Bayes Posterior Mean Estimate: } &= \text{Mean of post dist} = \frac{2}{2+3} = 0.4 \\
+E(X) &= \int_{-\infty}^\infty {x}\cdot f(x) \, dx \\
+E(\theta) &= \int_{-\infty}^\infty \theta \cdot f(\theta | x_{1},\dots x_{n}) \, d\theta \\
+f(\theta | x_{1},x_{2},x_{3}) &= c \cdot\theta(1-\theta)^2, 0\leq \theta\leq 1 \\
+\int_{-\infty}^\infty f(\theta |x_{1},x_{2},x_{3}) \, d\theta
+ &= 1 \\
+c \cdot\int_{0}^1 \theta(1-\theta)^2 \, d\theta &= c\cdot\frac{1}{12} =1, c=12 \\
+f(\theta | x_{1},x_{2},x_{3}) &= 12\theta(1-\theta)^2, 0\leq \theta\leq 1 \\
+E(\theta) &= \int_{-\infty}^{\infty} f(\theta | x_{1},x_{2},x_{3}) \, d\theta = \int_{0}^1 12\theta^2(1-\theta)^2\, d\theta = 0.4 \\
+E(\theta) &= 0.4,\, \hat{{\theta}} = 0.4,\, \theta \approx 0.4 \\
+\text{MAP estimate } &: \text{ Mode of posterior dist to estimate } \theta \\
+& \text{Find maximal point of the posterior function} \\
+f(\theta | x_{1}, x_{2}, x_{3}) &= 12\theta(1-\theta)^2, \, 0 \leq \theta \leq 1 \\
+f'(\theta | x_{1}, x_{2}, x_{3}) &= 12(1-\theta)^2 - 12\theta \cdot 2(1-\theta) = 0 \\
+\theta &= \frac{1}{3}, \text{ maximum point} \\
+\text{Posterior Median Estimate } &: \text{ We use median of post dist to est. } \theta \\
+\int_{-\infty}^{x_{0}}&= 0.5 \\
+\int_{-\infty}^{\theta_{0}} f(\theta ; x_{1},x_{2}\dots)\, d\theta &= \int_{0}^{\theta_{0}} 12\theta(1-\theta)^2
+\end{align}
+$$
+
+
+Confidence intervals for the above problem:
+
+$$
+\begin{align}
+\text{95\% CI for } \theta: \alpha = 5\% = 0.05 \\
+\theta_{1} = 0.025, \theta_{2} = 0.025 \\
+\int_{-\infty}^{\theta_{1}} f(\theta; x_{1},x_{2},\dots) \, d\theta = 0.025 \\
+\int_{0}^{\theta_{1}} 12\theta(1-\theta)^2 = 0.0676 \\
+\int_{0}^{\theta_{0}} 12\theta(1-\theta)^2 = 0.975 =0.8059
+\end{align}
+$$
+
+### Sufficiency 
+
+

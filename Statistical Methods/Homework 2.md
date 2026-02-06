@@ -1,4 +1,6 @@
-[[Statistical Methods]]
+I pledge my honor that I have abided by the stevens honor system
+
+Charles Booth
 ### Problem 1
 Suppose that $X$ follows a geometric distribution: 
 $$
@@ -35,6 +37,7 @@ $$
 &\hat{P}_{\text{MLE}} = \frac{1}{\bar{x}}
 \end{align}
 $$
+
 c.) Find the MLE estimate of $p$ if the dataset is $\{1, 5, 1, 2, 6, 2, 3, 7, 3, 8 \}$
 $$
 \begin{align}
