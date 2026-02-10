@@ -1,4 +1,4 @@
-[[Statistical Methods]]
+	[[Statistical Methods]]
 What is a parameter: A fixed unknown numerical value that describes the characteristic of an entire population, usually the $\mu$ or $\sigma$. For example, the two previous parameters can estimate the normal distribution. For the Poisson distribution, this is usually $\lambda$
 
 What's the difference between a parameter and a statistic:
@@ -295,6 +295,7 @@ f(x_{1},\dots , x_{n}|p) = \prod_{i=1}^n (p^{x_{i}}(1-p)^{1-x_{i}}) = p^{x_{1}+x
 \text{Prior PDF : } \text{Beta} (\alpha, \beta)
 \end{align}
 $$
+
 Q: Why did we use the beta distribution in particular here?
 
 b.)Assume $n = 100$, and $\sum_{i=1}^n X_{i} =30$. If the prior function is Beta(10,10), what is the posterior function?

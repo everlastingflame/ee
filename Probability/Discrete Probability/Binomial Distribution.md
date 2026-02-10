@@ -10,3 +10,5 @@ $$
 \end{align}
 $$
 Sampling with replacement happens when we have a set of $N$ elements and along with this a set of $M$ preferred elements, or elements that when sampled would be a success. When we do this, the members of the set are put back into circulation, so the cardinality of the set remains the same. Selecting a preferred element ends up in a success with probability $\frac{M}{N}$, and a failure (not selecting the preferred element) has probability $q = 1-p = \frac{N-M}{N}$
+
+

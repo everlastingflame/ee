@@ -7,3 +7,4 @@ f(x) = \frac{1}{B(\alpha,\beta)}x^{\alpha-1}(1-x)^{\beta -1}, \text{ for} \, 0 \
 \mu = \frac{\alpha}{\alpha + \beta}, \sigma^2 = \frac{\alpha \beta}{(\alpha+\beta)^2+(\alpha +\beta +1)}
 \end{align}
 $$
+
