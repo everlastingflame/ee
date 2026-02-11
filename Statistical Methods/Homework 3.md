@@ -1,4 +1,5 @@
-
+I pledge my honor that I have abided by the stevens honor system
+Charles Booth
 ### Problem 1
 Suppose that 100 items are sampled from a manufacturing process and 3 are found to be defective. A beta prior is used for the unknown proportion $\theta$ of defective items. Consider two cases
 $$
@@ -134,3 +135,46 @@ I used R to find this.
 So our confidence interval would be $[0.2712499, 0.7287501]$
 
 ### Problem 4
+
+Suppose that $Y$ follows a binomial distribution with parameters $n$ and $p$ so that pmf of $Y$ given $\theta$ is:
+$$
+g(y|\theta) = C(y,n)\theta^{y}(1-\theta)^{n-y}
+$$
+for $y = 0,1, \dots, n$,. Suppose that the prior pdf of the parameter $\theta$ is the Beta pdf, that is 
+$$
+h(\theta) = \frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}\theta^{\alpha-1}(1-\theta)^{\beta -1}
+$$
+for $0< \theta<1$
+**Find the posterior pdf of $\theta$ given that Y=y**
+
+$$
+\begin{align}
+\text{Prior PDF: } h(\theta) &= \frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}\theta^{\alpha-1}(1-\theta)^{\beta -1} \\
+\text{Likelihood function: } L(\theta) &= \prod_{i=1}^n \begin{pmatrix}y  \\n\end{pmatrix}\theta^{y_{i}}(1-\theta)^{n-y_{i}} \\
+&= \theta^{\sum_{i=1}^n y_{i}} (1-\theta)^{n^2-\sum_{i=1}^n y_{i}} \\
+f(\theta|y_{1},y_{2},\dots,y_{n}) &\propto \theta^{\alpha -1}(1-\theta)^{\beta-1}\cdot\theta^{\sum_{i=1}^n y_{i}} (1-\theta)^{n^2-\sum_{i=1}^n y_{i}}  \\
+&\propto \theta^{\alpha+\sum_{i=1}^n y_{i}-1}(1-\theta)^{\beta+n^2-\sum_{i=1}^ny_{i}-1} \\
+&\propto \text{Beta}\left( \alpha + \sum_{i=1}^ny_{i}-1, \beta + n^2-\sum_{i=1}^n y_{i} -1\right)
+\end{align}
+$$
+### Problem 5
+A traffic control engineer believes that the cars passing through a particular intersection
+arrive at a mean rate equal to either 3 or 5 for a given time interval. Prior to collecting
+any data, the engineer believes that it is much more likely that the rate $\lambda = 3$ than $\lambda =5$. In fact, the engineer believes that the prior probabilities are: $P(\lambda = 3) = 0.7, \, P(\lambda = 5) = 0.3$. One day, during a randomly selected time interval, the engineer observes $x = 7$ cars pass through the intersection. In light of the engineer's observation, what is the probability $\lambda =3$? What is the probability that $\lambda =5$
+
+
+$$
+\begin{align}
+ f(x | \lambda) &= \frac{\lambda^xe^{-\lambda}}{x!} \\
+P(x=7 | \lambda = 3) & = \frac{3^7e^{-3}}{7!} \approx 0.021604031\\
+P(x=7 | \lambda = 5) &= \frac{5^7e^{-5}}{7!} \approx 0.104444863\\
+P(X=7) &= P(X=7 | \lambda = 3) \cdot P(\lambda=3) + P(X=7 | \lambda = 5)\cdot P(\lambda=5) \approx 0.046456 \\
+&\text{Probability } \lambda = 3 \\
+P(\lambda = 3 | X=7) &= \frac{P(x=7|\lambda=3)P(\lambda=3)}{P(x=7)} \approx 0.32552803889 \\&\text{Probability } \lambda = 5\\
+P(\lambda = 5 | X=7) &= \frac{P(x=7|\lambda=5)P(\lambda=5)}{P(x=7)} \approx 0.67447196111
+\end{align}
+$$
+
+
+
+

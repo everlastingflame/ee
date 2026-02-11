@@ -36,45 +36,31 @@
             }
           },
           {
-            "id": "020764a4096904ec",
+            "id": "28b7aec71542d6ed",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Probability/Continuous Probability/Beta Distribution.md",
+                "file": "Probability/Discrete Probability/Poisson Distribution.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Beta Distribution"
+              "title": "Poisson Distribution"
             }
           },
           {
-            "id": "d0c848a687cce9e8",
+            "id": "747086a46d2ebe19",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Probability/Discrete Probability/Bernoulli Distribution.md",
+                "file": "Probability/Continuous Probability/Exponential Distribution.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bernoulli Distribution"
-            }
-          },
-          {
-            "id": "e96b2ab0b5ef155a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Probability/Discrete Probability/Binomial Distribution.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Binomial Distribution"
+              "title": "Exponential Distribution"
             }
           }
         ],
@@ -242,13 +228,18 @@
   },
   "active": "ddc38e4bf8ce6244",
   "lastOpenFiles": [
-    "Probability/Continuous Probability/Beta Distribution.md",
+    "Probability/Discrete Probability/Poisson Distribution.md",
     "Statistical Methods/Homework 3.md",
-    "Pasted image 20260210150745.png",
-    "Statistical Methods/Parameter Estimation.md",
+    "Probability/Continuous Probability/Exponential Distribution.md",
     "Probability/Discrete Probability/Geometric Distribution.md",
+    "Probability/Continuous Probability/Gamma Distribution.md",
+    "Probability/Continuous Probability/Uniform Distribution.md",
+    "Probability/Continuous Probability/Normal Distribution.md",
     "Probability/Discrete Probability/Binomial Distribution.md",
     "Probability/Discrete Probability/Bernoulli Distribution.md",
+    "Probability/Continuous Probability/Beta Distribution.md",
+    "Pasted image 20260210150745.png",
+    "Statistical Methods/Parameter Estimation.md",
     "Pasted image 20260210143716.png",
     "Pasted image 20260210143643.png",
     "Pasted image 20260209182451.png",
@@ -256,13 +247,9 @@
     "Statistical Methods/Homework 2.md",
     "Statistical Methods/Summarizing Data.md",
     "Probability/Moment.md",
-    "Probability/Continuous Probability/Exponential Distribution.md",
     "Statistical Methods/Statistical Methods.md",
     "Probability/Combinatorics/Combination.md",
-    "Probability/Continuous Probability/Normal Distribution.md",
     "Statistical Methods/Homework 1.md",
-    "Probability/Discrete Probability/Poisson Distribution.md",
-    "Probability/Continuous Probability/Gamma Distribution.md",
     "Probability/Combinatorics/Combinatorics.md",
     "Probability/Combinatorics/Permutation.md",
     "Untitled.canvas",
