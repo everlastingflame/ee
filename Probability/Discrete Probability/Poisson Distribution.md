@@ -9,3 +9,4 @@ $$
 \end{align}
 $$
 
+(It can be assumed that most of the time $t = 1$)

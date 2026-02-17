@@ -1,4 +1,4 @@
-	[[Statistical Methods]]
+[[Statistical Methods]]
 What is a parameter: A fixed unknown numerical value that describes the characteristic of an entire population, usually the $\mu$ or $\sigma$. For example, the two previous parameters can estimate the normal distribution. For the Poisson distribution, this is usually $\lambda$
 
 What's the difference between a parameter and a statistic:
@@ -381,5 +381,70 @@ $$
 $$
 
 ### Sufficiency 
+Is there a way to use less information to estimate the parameter at the same level of accuracy?
 
+Definititon:
+A statistic $T(X_{1}, X_{2},\dots, X_{n})$ is said to be sufficient for $\theta$ if the conditional distribution of $X_{1},X_{2},\dots,X_{n}$ given $T=t$ does not depend on $\theta$ for any value of $t$. 
+
+i.e $P(X_{1},X_{2},\dots,X_{n}|T(x_{1},x_{2},\dots,x_{n})=t)$ does not depend on $\theta$
+
+
+Example:
+
+1.) Let $X_{i}$ follows $Ber(\theta)$ and i.i.d, $n=1,\dots ,n$, Show that $T = \sum X_{i}$ is sufficient for $\theta$
+
+$$
+\begin{align}
+&T = X_{1} + X_{2} +\dots + X_{n} \\
+&\text{Prove: } P(X_{1}=x_{1}, X_{2}=x_{2}, \dots, X_{n} = x_{n} | T= x_{1}+x_{2}+\dots+ x_{n}) \text{ does not depend on } \theta \\
+&P(A|B) = \frac{P(A \cap B)}{P(B)} \\
+&P(X_{1}=x_{1}, X_{2}=x_{2}, \dots, X_{n} = x_{n} | T= x_{1}+x_{2}+\dots+ x_{n}) = \\
+&= \frac{P\left( X_{1}=x_{1}\dots X_{n}=x_{n}|T= \sum x_{i} =t \right)}{P(T=x_{1}+\dots x_{n})} \\
+&=\frac{P\left( X_{1}=x_{1}\dots X_{n}=x_{n} \right)}{\begin{pmatrix}
+n \\t
+\end{pmatrix}\theta^t(1-\theta)^{n-t}}  \\
+&= \frac{P(X_{1}=x_{1})\cdot\dots \cdot P(X_{n}=x_{n})}{\begin{pmatrix}
+n \\ t
+\end{pmatrix}\theta^{t}(1-\theta)^{n-t}} \\
+&=\frac{\theta^{x_{1}}(1-\theta)^{1-x_{1}}\cdot\dots \cdot \theta^{x_{n}}(1-\theta)^{1-x_{n}}}{\begin{pmatrix}
+n \\t
+\end{pmatrix}\theta^t(1-\theta)^{n-t}} \\
+&= \frac{\theta^t(1-\theta)^{n-t}}{\begin{pmatrix}
+n \\t
+\end{pmatrix}\theta^t(1-\theta)^{n-t}} \\
+&= \frac{1}{\begin{pmatrix}
+n \\ t
+\end{pmatrix}}
+\end{align}
+$$
+If we want to estimate $\theta$, then we don't need to know each and every value of the dataset. We only need to know $\sum x_{i} = x_{1}+x_{2}+\dots+x_{n}$ 
+
+### Factorization Theorem
+
+Examples:
+
+1.) Find a sufficient statistics for the Bernoulli distribution model:
+
+$$
+\begin{align}
+L(\theta) &= \prod_{i=1}^n f(x_{i};p) = \prod_{i=1}^n (\theta^{x_{i}}(1-\theta)^{1-x_{i}})
+ \\
+L(\theta) &= \theta^{x_{1}+x_{2}+\dots}(1-\theta)^{n-(x_{1}+x_{2}+\dots)}  \\
+&= \theta^{\sum_{i=1}^nx_{i}}(1-\theta)^{n-\sum_{i=1}^n x_{i}} \\
+&= \theta^{T}(1-\theta)^{n-T} = g(T,\theta)
+\end{align}
+$$
+2.) Find a sufficient statistic for the Uniform distribution $U[0,\theta]$ model
+
+$$
+\begin{align}
+
+x_{1},x_{2},\dots,x_{n} \text{ i.i.d } U[0,\theta], \theta \text{ unknown} \\
+\text{For } U[0,\theta], \text{ pdf } f(x) = \frac{1}{\theta} \text{ if } 0 \leq x\leq \theta \\
+L(\theta) = \prod_{i=1}^n f(x_{i}) = \left( \frac{1}{\theta} \right)^n, \text{ if } 0\leq x_1, x_{2},\dots, x_{n} \leq \theta \\
+\text{Otherwise, } I_{A}(x) = 1 \text{ if } x \in A, 0 \text{ if } x \not\in A \\
+L(\theta) = \left( \frac{1}{\theta} \right)^n \cdot I_{[0, \theta]}(\text{max } x_{i}) \\
+\left( \frac{1}{\theta} \right)^n I_{[0, \theta]}(T) = g(T, \theta)
+\end{align}
+$$
 
