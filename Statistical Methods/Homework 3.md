@@ -1,3 +1,4 @@
+[[Statistical Methods]]
 I pledge my honor that I have abided by the stevens honor system
 Charles Booth
 ### Problem 1

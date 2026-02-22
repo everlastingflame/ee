@@ -1,3 +1,7 @@
+[[Statistical Methods]]
+Charles Booth
+I pledge my honor that I have abided by the stevens honor system. 
+
 ### Problem 1
 
 Suppose that $X$ follows a geometric distribution $P(X=k) = p(1-p)^{k-1}$ and assume that an i.i.d sample $X_{1},X_{2},\dots,X_{n}$
@@ -119,6 +123,7 @@ g(T,\theta) &= \frac{1}{\theta^{2n}}\exp\left( \frac{-T}{2\theta^2} \right) \\
 h&= \prod_{i=1}^n x_{i}
 \end{align}
 $$
+
 
 
 
