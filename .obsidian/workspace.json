@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Probability/Conditional Probability.md",
+                "file": "Statistical Methods/Analysis of Variance (ANOVA).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Conditional Probability"
+              "title": "Analysis of Variance (ANOVA)"
             }
           }
         ]
@@ -185,20 +185,21 @@
   },
   "active": "166c2e1438265d55",
   "lastOpenFiles": [
-    "Probability/Continuous Distributions.md",
+    "Statistical Methods/Homework 6.md",
     "Statistical Methods/Comparing Two Samples.md",
+    "Statistical Methods/Analysis of Variance (ANOVA).md",
+    "Probability/Conditional Probability.md",
+    "Probability/Continuous Distributions.md",
     "Probability/Combinatorics/Permutation.md",
     "Probability/Combinatorics/Counting.md",
     "Probability/Combinatorics/Combinatorics.md",
     "Probability/Combinatorics/Combination.md",
-    "Statistical Methods/Homework 6.md",
     "Statistical Methods/Hypothesis Testing.md",
     "AI generated l4d2 + ubuntu guide.md",
     "Statistical Methods/Summarizing Data.md",
     "Statistical Methods/Homework 4.md",
     "Statistical Methods/Homework 5.md",
     "Statistical Methods/Parameter Estimation.md",
-    "Probability/Conditional Probability.md",
     "Probability/Discrete Probability/Bernoulli Distribution.md",
     "Statistical Methods/Homework 3.md",
     "Statistical Methods/Homework 2.md",
@@ -211,7 +212,6 @@
     "Probability/Discrete Probability/Binomial Distribution.md",
     "Pasted image 20260220132801.png",
     "Statistical Methods/Statistical Methods.md",
-    "Probability/Continuous Probability/Gamma Distribution.md",
     "Pasted image 20260210150745.png",
     "Pasted image 20260210143716.png",
     "Pasted image 20260210143643.png",
