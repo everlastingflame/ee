@@ -1,4 +1,4 @@
-
+Charles Booth. I pledge my honor that I have abided by the stevens honor code.
 ## Problem 1
 The results of a comparison of four popular minivans are reported in the following table. One of the features the researchers compared was the distance (in feet) required for the minivan to come to a complete stop when traveling at a speed of 60 miles per hour (braking distance). Suppose the braking distances were measured for five minivans of each type with the following results.
 Braking Distances (Feet)
@@ -126,7 +126,7 @@ Server test scores
 | 52.4     | 68.5     | 48.3     | 72.2     |
 | 54.1     | 64.2     | 52.2     | 70.6     |
 | 58.9     | 60.1     | 54.8     | 56.5     |
-Perform a Kruskal-Wallis test on these data using $\alpha=0.10$. Are there differences between the servers?
+	Perform a Kruskal-Wallis test on these data using $\alpha=0.10$. Are there differences between the servers?
 $$
 \begin{align}
 &H_{0}:F_{1}=F_{2}=F_{3}=F_{4} \\
@@ -145,18 +145,116 @@ H&=\frac{12}{20(20+1)}\left( \sum_{i=1}^4 J_{i} \bar{R}_{i}^2\right)-3(20+1) \\
 &\text{We reject } H_{0} \text{ since } H >\chi^2_{3}(0.10)
 \end{align}
 $$
+## Problem 5
+The following table gives the survival times (in hours) for animals in an experiment whose design consisted of three poisons, four treatments, and four observations per cell.
+![[Pasted image 20260324102638.png]]
+Conduct a two-way analysis of variance to test the effects of the two main factors and their interaction. Use $\alpha = 0.10$
+
+| Source of Variation | SS       | df  | MS      | F       | P-value | F crit |
+| ------------------- | -------- | --- | ------- | ------- | ------- | ------ |
+| Poison              | 103.0429 | 2   | 51.5215 | 23.5700 | 0       | 2.4563 |
+| Treatment           | 91.9040  | 3   | 30.6347 | 14.0146 | 0       | 2.2426 |
+| Interaction         | 24.7454  | 6   | 4.1242  | 1.8867  | 0.1100  | 1.9446 |
+| Within              | 78.6925  | 36  | 2.1859  |         |         |        |
+|                     |          |     |         |         |         |        |
+| Total               | 298.3848 | 47  |         |         |         |        |
+For Poison
+$$
+\begin{align}
+&H_{0}: \alpha_{k}=0 \\
+&H_{1}: \text{Not } H_{0} \\
+&F=23.5700 \geq F_{2,36}(0.10) =2.44 \\
+&\text{Reject } H_{0}
+\end{align}
+$$
+For Treatment
+$$
+\begin{align}
+&H_{0}: \beta_{k}=0 \\
+&H_{1}: \text{Not } H_{0} \\
+&F=14.0146 \geq F_{3,36}(0.10) =2.23 \\
+&\text{Reject } H_{0}
+\end{align}
+$$
+For Interaction 
+$$
+\begin{align}
+&H_{0}: \delta_{ij}=0 \\
+&H_{1}: \text{Not } H_{0} \\
+&F=1.8867 \not\geq F_{6,36}(0.10) =1.93 \\
+&\text{Fail to reject } H_{0}
+\end{align}
+$$
+
+
+## Problem 6
+A banana grower has three fertilizers from which to choose. He would like to determine which fertilizer produces banana trees with the largest yield (measured in pounds of bananas produced). The banana grower has noticed that there is a difference in the average yields of the banana trees depending on which side of the farm they are planted (South Side, North Side, West Side, or East Side). Because of the variation in yields among the areas on the farm, the farmer has decided to randomly select three trees within each area and then randomly assign the fertilizers to the trees. After harvesting the bananas, he calculates the yields of the trees within each of the areas. The results are as follows.
+![[Pasted image 20260324112940.png]]
+
+a.) Do you think a randomized block design is appropriate for the banana grower’s study? What assumptions must the banana grower make to apply this test? Do the data appear to satisfy these assumptions? Explain.
+
+I think that using randomized block design here would be appropriate considering that the assumption when using this test is that there is no interaction between the block and the treatment. In this example, the banana farmer is specifically trying to see what fertilizer provides the best yield independently of where the tree is. The data appears to satisfy this because of how the testing was done, as a random tree was selected from each region, along with a fertilizer also being selected randomly too. The data seems to have very little variance, but it is hard to tell without doing any statistical analysis. 
+
+b.) Perform a two-way ANOVA using randomized block design. Use $\alpha =0.10$
+
+| Source of variation | SS     | df  | MS      | F     | p-value | F crit |
+| ------------------- | ------ | --- | ------- | ----- | ------- | ------ |
+| Location            | 36.25  | 3   | 12.0833 | 36.25 | 0.0003  | 3.2888 |
+| Fertilizer          | 104    | 2   | 52      | 156   | 0.0000  | 3.4633 |
+| Error               | 2      | 6   | 0.3333  |       |         |        |
+|                     |        |     |         |       |         |        |
+| Total               | 142.25 | 11  |         |       |         |        |
+|                     |        |     |         |       |         |        |
+For location
+$$
+\begin{align}
+&H_{0}: \alpha_{k}=0 \\
+&H_{1}: \text{Not } H_{0} \\
+&F=36.25 \geq F_{3,6}(0.10) =3.28 \\
+&\text{Reject } H_{0}
+\end{align}
+$$
+For fertilizer
+$$
+\begin{align}
+&H_{0}: \beta_{k}=0 \\
+&H_{1}: \text{Not } H_{0} \\
+&F=156 \geq F_{2,6}(0.10) =3.46 \\
+&\text{Reject } H_{0}
+\end{align}
+$$
 
 
 
+## Problem 7
+Solve Problem 6 using the Friedman’s Test. Compare the results to the results obtained in Problem 6.
 
+Ranked table:
 
+|            | A   | B   | C   |
+| ---------- | --- | --- | --- |
+| South Side | 2   | 1   | 3   |
+| North Side | 2   | 1   | 3   |
+| West Side  | 2   | 1   | 3   |
+| East Side  | 2   | 1   | 3   |
 
-
-
-
-
-
-
-
-
+$$
+\begin{align}
+&H_{0}: \text{There is no effect for any fertilizer} \\
+&H_{1}: \text{Not } H_{0}
+\end{align}
+$$
+$$
+\begin{align} \\
+&J=4 \\
+&I =3 \\
+&\bar{R}_{1}: \frac{8}{4} = 2\\
+&\bar{R}_{2}: \frac{4}{4} = 1\\
+&\bar{R}_{3}: \frac{12}{4}=3 \\
+&\bar{R}_{..}: \frac{8+4+12}{12} = 2 \\
+&\sum(\bar{R}_{i}-\bar{R})^2=  (2-2)^2+(2-1)^2+(2-3)^2=2 \\
+&Q = \frac{12J}{I(I+1)}\left( \sum(R_{i}-\bar{R}_{..})^2 \right) = \frac{48}{12}(2) = 8 \\
+& \chi^2_{2}(0.10) = 4.605, Q \gt \chi^2_{2}(0.10), \text{ Reject } H_{0}
+\end{align}
+$$
 
