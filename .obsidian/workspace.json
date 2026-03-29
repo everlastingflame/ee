@@ -13,6 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Statistical Methods/Homework 8.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Homework 8"
+            }
+          },
+          {
+            "id": "0325bdd51b4527d1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Statistical Methods/Categorical Data Analysis.md",
                 "mode": "source",
                 "source": false
@@ -213,10 +227,11 @@
   },
   "active": "166c2e1438265d55",
   "lastOpenFiles": [
-    "Probability/Discrete Probability/Hypergeometric Distribution.md",
     "Statistical Methods/Categorical Data Analysis.md",
+    "Statistical Methods/Homework 8.md",
     "Probability/Conditional Probability.md",
     "Statistical Methods/Comparing Two Samples.md",
+    "Probability/Discrete Probability/Hypergeometric Distribution.md",
     "Statistical Methods/Statistical Methods.md",
     "Statistical Methods/Hypothesis Testing.md",
     "Statistical Methods/Parameter Estimation.md",
@@ -243,7 +258,6 @@
     "Statistical Methods/Homework 1.md",
     "Probability/Continuous Probability/Normal Distribution.md",
     "Probability/Continuous Probability/Uniform Distribution.md",
-    "Probability/Continuous Probability/Exponential Distribution.md",
     "Pasted image 20260220132801.png",
     "Pasted image 20260210150745.png",
     "Pasted image 20260210143716.png",
