@@ -13,30 +13,43 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Statistical Methods/Homework 7.md",
+                "file": "Statistical Methods/Categorical Data Analysis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Homework 7"
+              "title": "Categorical Data Analysis"
             }
           },
           {
-            "id": "93a603433d79091c",
+            "id": "82f6ee6a85922fc8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Statistical Methods/Homework 7.md",
+                "file": "Probability/Conditional Probability.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Homework 7"
+              "title": "Conditional Probability"
+            }
+          },
+          {
+            "id": "e419f0b53810bed4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Probability/Discrete Probability/Hypergeometric Distribution.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Hypergeometric Distribution"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,29 +211,32 @@
       "bases:Create new base": false
     }
   },
-  "active": "93a603433d79091c",
+  "active": "166c2e1438265d55",
   "lastOpenFiles": [
+    "Probability/Discrete Probability/Hypergeometric Distribution.md",
+    "Statistical Methods/Categorical Data Analysis.md",
+    "Probability/Conditional Probability.md",
+    "Statistical Methods/Comparing Two Samples.md",
+    "Statistical Methods/Statistical Methods.md",
+    "Statistical Methods/Hypothesis Testing.md",
+    "Statistical Methods/Parameter Estimation.md",
+    "Statistical Methods/Summarizing Data.md",
+    "Statistical Methods/Homework 7.md",
+    "Statistical Methods/Analysis of Variance (ANOVA).md",
     "Pasted image 20260324112940.png",
     "Pasted image 20260324102638.png",
-    "Statistical Methods/Summarizing Data.md",
-    "Statistical Methods/Analysis of Variance (ANOVA).md",
-    "Statistical Methods/Homework 7.md",
     "Pasted image 20260322161505.png",
     "Pasted image 20260322161441.png",
     "Pasted image 20260322161007.png",
     "Statistical Methods/Homework 6.md",
-    "Statistical Methods/Comparing Two Samples.md",
-    "Probability/Conditional Probability.md",
     "Probability/Continuous Distributions.md",
     "Probability/Combinatorics/Permutation.md",
     "Probability/Combinatorics/Counting.md",
     "Probability/Combinatorics/Combinatorics.md",
     "Probability/Combinatorics/Combination.md",
-    "Statistical Methods/Hypothesis Testing.md",
     "AI generated l4d2 + ubuntu guide.md",
     "Statistical Methods/Homework 4.md",
     "Statistical Methods/Homework 5.md",
-    "Statistical Methods/Parameter Estimation.md",
     "Probability/Discrete Probability/Bernoulli Distribution.md",
     "Statistical Methods/Homework 3.md",
     "Statistical Methods/Homework 2.md",
@@ -228,14 +244,11 @@
     "Probability/Continuous Probability/Normal Distribution.md",
     "Probability/Continuous Probability/Uniform Distribution.md",
     "Probability/Continuous Probability/Exponential Distribution.md",
-    "Probability/Discrete Probability/Poisson Distribution.md",
-    "Probability/Discrete Probability/Geometric Distribution.md",
     "Pasted image 20260220132801.png",
     "Pasted image 20260210150745.png",
     "Pasted image 20260210143716.png",
     "Pasted image 20260210143643.png",
     "Pasted image 20260209182451.png",
-    "Pasted image 20260209182422.png",
     "Untitled.canvas",
     "Probability/Combinatorics",
     "BIA 674",

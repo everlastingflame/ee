@@ -1,3 +1,4 @@
+[[Probability]]
 Sometimes knowing that an event $A$ occurred cant tell you whether or not event $B$ occurred. Other times, knowing that an event $A$ occurred changes the probability that event $B$ occurred. 
 
 Definiton:

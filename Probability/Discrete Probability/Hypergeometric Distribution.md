@@ -9,3 +9,4 @@ N - n \\ N-1
 \end{pmatrix}npq
 \end{align}
 $$
+
