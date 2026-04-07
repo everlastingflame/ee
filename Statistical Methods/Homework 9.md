@@ -2,6 +2,7 @@
 ## Problem 1
 
 A chain of sports clubs wishes to use regression analysis to help determine which features should be included in their new location. They believe that median income in the area is a significant factor in determining the number of people who join a neighborhood sports club. The CEO of the chain gathered data from existing sports clubs regarding the number of members each club had, the median income in the area in which they were located, and whether the clubs had a pool, racquetball courts, or group fitness classes. If management can determine with 90% confidence that a pool, racquetball courts, or group fitness classes produces significantly more memberships than sports clubs without those features, they will include them in the new location.
+
 ![[Pasted image 20260403113532.png]]
 
 a.) What sign do you expect the correlation coefficient between the number of members and the median income to have (without calculating)? Explain why.
@@ -70,3 +71,42 @@ $$
 e.) Only median income in this situation is statistically significant. 
 f.) Income is very important here because it seems as though it is positively correlated with the number of members. It also has a p-value of essentially 0, meaning that it is significant. 
 g.) The sports chain should focus on my last model, and if they were to tweak it, they should just use the income as a variable and not worry about the rest. 
+
+
+
+## Problem 2
+
+The Supplemental Nutrition Assistance Program (SNAP) provides monthly benefits that help eligible low-income households buy the food they need for good health. For most households, SNAP finds account for only a portion of their food budgets, so they must also use their own funds to buy enough food to last throughout the month. Eligible households can receive food assistance through regular SNAP or through the Louisiana Combined Application Project (LaCAP). Using the data in the table, answer the following questions to help predict monthly benefits to eligible households.
+
+![[Pasted image 20260407114921.png]]
+
+a.) I think a good regression model to fit would be using the Gross Monthly and Family size as independent variables, Monthly Benefit as the output
+
+b.) $$
+\begin{align}
+H_{0}: \beta_{1}= \beta_{2}=0 \\
+H_{1}: \beta_{1} \neq \beta_{2} \neq 0
+\end{align}
+$$
+![[Pasted image 20260407115551.png]]
+
+$$
+\alpha=0.05
+$$
+$$
+\text{Monthly Benefit} = 40.79031 + 3.6594(\text{Family Size})+0.1461(\text{Gross Monthly Income})
+$$
+c.) This test is significant, we can reject the null hypothesis. I think the gross monthly income is a stronger indicator of monthly benefit, the family size does not provide a strong signal for this dataset.
+
+d.) Give a 95% confidence interval for average monthly benefits for a four-member household with a gross monthly income of $2500. Interpret this interval.
+
+
+
+e.) Provide a 99% prediction interval for a four-member household with a gross monthly income of $2500. Interpret this interval.
+
+f.) What is the difference between the intervals found in parts d and part e?
+
+
+
+
+
