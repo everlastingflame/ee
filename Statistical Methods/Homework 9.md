@@ -82,12 +82,14 @@ The Supplemental Nutrition Assistance Program (SNAP) provides monthly benefits t
 
 a.) I think a good regression model to fit would be using the Gross Monthly and Family size as independent variables, Monthly Benefit as the output
 
-b.) $$
+b.) 
+$$
 \begin{align}
 H_{0}: \beta_{1}= \beta_{2}=0 \\
 H_{1}: \beta_{1} \neq \beta_{2} \neq 0
 \end{align}
 $$
+
 ![[Pasted image 20260407115551.png]]
 
 $$
@@ -100,13 +102,19 @@ c.) This test is significant, we can reject the null hypothesis. I think the gro
 
 d.) Give a 95% confidence interval for average monthly benefits for a four-member household with a gross monthly income of $2500. Interpret this interval.
 
+![[Pasted image 20260407133918.png]]
 
+There is a probability of 95% that a family of four with an income of $2500 receives SNAP benefits between $410.701-$430.768
 
 e.) Provide a 99% prediction interval for a four-member household with a gross monthly income of $2500. Interpret this interval.
 
+![[Pasted image 20260407134220.png]]
+
+There is a 99% chance that the same family will receive snap benefits between $338.934-$502.535
+
 f.) What is the difference between the intervals found in parts d and part e?
 
-
+The spread is much wider with a higher confidence level. 
 
 
 

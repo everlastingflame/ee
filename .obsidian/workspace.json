@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Statistical Methods/Categorical Data Analysis.md",
+                "file": "Statistical Methods/Homework 9.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Categorical Data Analysis"
+              "title": "Homework 9"
             }
           },
           {
@@ -63,7 +63,8 @@
               "title": "Hypergeometric Distribution"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -225,8 +226,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "166c2e1438265d55",
+  "active": "0325bdd51b4527d1",
   "lastOpenFiles": [
+    "Statistical Methods/Categorical Data Analysis.md",
+    "Statistical Methods/Homework 9.md",
+    "Pasted image 20260407134220.png",
+    "Pasted image 20260407133918.png",
     "Pasted image 20260407115551.png",
     "Pasted image 20260407114921.png",
     "Pasted image 20260403120839.png",
@@ -235,10 +240,7 @@
     "Pasted image 20260403115141.png",
     "Pasted image 20260403114117.png",
     "Pasted image 20260403114035.png",
-    "Pasted image 20260403113532.png",
     "Statistical Methods/Homework 8.md",
-    "Statistical Methods/Homework 9.md",
-    "Statistical Methods/Categorical Data Analysis.md",
     "Probability/Conditional Probability.md",
     "Statistical Methods/Comparing Two Samples.md",
     "Probability/Discrete Probability/Hypergeometric Distribution.md",
@@ -248,8 +250,6 @@
     "Statistical Methods/Summarizing Data.md",
     "Statistical Methods/Homework 7.md",
     "Statistical Methods/Analysis of Variance (ANOVA).md",
-    "Pasted image 20260324112940.png",
-    "Pasted image 20260324102638.png",
     "Statistical Methods/Homework 6.md",
     "Probability/Continuous Distributions.md",
     "Probability/Combinatorics/Permutation.md",
