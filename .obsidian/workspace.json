@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Statistical Methods/Homework 9.md",
+                "file": "Statistical Methods/Homework 10.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Homework 9"
+              "title": "Homework 10"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Statistical Methods/Homework 9.md",
+                "file": "Statistical Methods/Categorical Data Analysis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Homework 9"
+              "title": "Categorical Data Analysis"
             }
           },
           {
@@ -228,19 +228,21 @@
   },
   "active": "0325bdd51b4527d1",
   "lastOpenFiles": [
-    "Statistical Methods/Categorical Data Analysis.md",
-    "Statistical Methods/Homework 9.md",
+    "Statistical Methods/Homework 10.md",
+    "Pasted image 20260411133328.png",
+    "Pasted image 20260411133249.png",
+    "Pasted image 20260411133156.png",
+    "Pasted image 20260411131836.png",
     "Pasted image 20260407134220.png",
     "Pasted image 20260407133918.png",
+    "Pasted image 20260331164144.png",
+    "Pasted image 20260331145339.png",
+    "Statistical Methods/Homework 9.md",
+    "Statistical Methods/Homework 7.md",
+    "Statistical Methods/Homework 8.md",
     "Pasted image 20260407115551.png",
     "Pasted image 20260407114921.png",
-    "Pasted image 20260403120839.png",
-    "Pasted image 20260403115403.png",
-    "Pasted image 20260403115332.png",
-    "Pasted image 20260403115141.png",
-    "Pasted image 20260403114117.png",
-    "Pasted image 20260403114035.png",
-    "Statistical Methods/Homework 8.md",
+    "Statistical Methods/Categorical Data Analysis.md",
     "Probability/Conditional Probability.md",
     "Statistical Methods/Comparing Two Samples.md",
     "Probability/Discrete Probability/Hypergeometric Distribution.md",
@@ -248,7 +250,6 @@
     "Statistical Methods/Hypothesis Testing.md",
     "Statistical Methods/Parameter Estimation.md",
     "Statistical Methods/Summarizing Data.md",
-    "Statistical Methods/Homework 7.md",
     "Statistical Methods/Analysis of Variance (ANOVA).md",
     "Statistical Methods/Homework 6.md",
     "Probability/Continuous Distributions.md",
@@ -262,7 +263,6 @@
     "Probability/Discrete Probability/Bernoulli Distribution.md",
     "Statistical Methods/Homework 3.md",
     "Statistical Methods/Homework 2.md",
-    "Statistical Methods/Homework 1.md",
     "Untitled.canvas",
     "Probability/Combinatorics",
     "BIA 674",

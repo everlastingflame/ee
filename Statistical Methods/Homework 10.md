@@ -17,14 +17,42 @@ Ordinal regression is a version of regression that deals with ordered data, such
 
 Apply the Naive Bayes Classifier to the “iris” dataset (that is provided to you in the direction of the HW 10 assignment by following the below requirements:
 
-2.1) Use sepal.length for the dependent variable and all other features (sepal.width, petal.length, petal.width, variety) for the independent variables.
+1) Use sepal.length for the dependent variable and all other features (sepal.width, petal.length, petal.width, variety) for the independent variables.
+2) Turn sepal.length into a qualitative variable with four possible values: Four (for sepal.length values from 4.0 to 4.9), Five (for sepal.length values from 5.0 to 5.9), Six (for sepal.length values from 6.0 to 6.9), and Seven (for sepal.length values from 7.0 to 7.9).
+3) The goal is to use Naive Bayes Classifier to classify flowers into one of the four classes Four, Five, Six, or Seven based on their sepal width, petal length, petal width and variety. Note that variety is a qualitative variable, and sepal.width, petal.length and petal.width are quantitative.
+4) Please write out clearly your answer for the probabilities $\pi_{k}$ and density functions $f_{kj}$, as well as explain how they are obtained. Make sure to include all graphs, plots, screenshots of output, etc.
 
-2.2) Turn sepal.length into a qualitative variable with four possible values: Four (for sepal.length values from 4.0 to 4.9), Five (for sepal.length values from 5.0 to 5.9), Six (for sepal.length values from 6.0 to 6.9), and Seven (for sepal.length values from 7.0 to 7.9).
+$n=150$
+$$
+\pi_{k} = \left\{ \begin{matrix}
+4: \frac{22}{150}&=0.1467\\
+5: \frac{61}{150}&=0.4067\\
+6: \frac{54}{150}&=0.36\\
+7: \frac{13}{150}&=0.0867\\
+\end{matrix} \right\}
+$$
+I obtained all of the following values by using the encoded classes and taking the mean, variance, and STD of the subset of corresponding features.
 
-2.3) The goal is to use Naive Bayes Classifier to classify flowers into one of the four classes Four, Five, Six, or Seven based on their sepal width, petal length, petal width and variety. Note that variety is a qualitative variable, and sepal.width, petal.length and petal.width are quantitative.
-
-2.4) Please write out clearly your answer for the probabilities $\pi_{k}$ and density functions $f_{kj}$, as well as explain how they are obtained. Make sure to include all graphs, plots, screenshots of output, etc.
+![[Pasted image 20260411131836.png]]
 
 
+The formula for each $f_{kj}$ is:
+$$
+f_{kj}=(x_{j}) \frac{1}{\sqrt{ 2\pi \sigma^2_{kj} }}\exp \left( -\frac{(x_{j}-\mu_{kj})^2}{2\sigma^2_{kj}}\right)
+$$
+Here is a density plot of each of the features with their respective classes
+![[Pasted image 20260411133156.png]]
 
 
+Here are the proportions of each for each class and feature
+![[Pasted image 20260411133249.png]]
+
+And here is the corresponding proportion for each class.
+
+![[Pasted image 20260411133328.png]]
+
+For any new observation, you would have to use the formula to classify it:
+$$
+p_{k}(x)=\frac{\pi_{k}\cdot f_{k1}(x_{1})\cdot f_{k2}(x_{2}) \cdot f_{k3}(x_{3})\cdot f_{k4}(x_{4})}{\sum_{i=1}^4 \pi_{i} \cdot f_{i1}(x_{1})\cdot f_{i2}(x_{2})\cdot f_{i3}(x_{3})\cdot f_{i4}(x_{4})}
+$$
+In this formula, $f_{kj}$ is the gaussian density of sepal.width, petal.length, petal.width, and variety.  
