@@ -22,31 +22,31 @@
             }
           },
           {
-            "id": "0325bdd51b4527d1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Statistical Methods/Categorical Data Analysis.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Categorical Data Analysis"
-            }
-          },
-          {
             "id": "82f6ee6a85922fc8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Probability/Conditional Probability.md",
+                "file": "Physics 2/Coloumb's Law.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Conditional Probability"
+              "title": "Coloumb's Law"
+            }
+          },
+          {
+            "id": "f360935b922b6c3d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Physics 2/Coloumb's Law.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Coloumb's Law"
             }
           },
           {
@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -84,7 +84,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -226,8 +228,20 @@
       "bases:Create new base": false
     }
   },
-  "active": "0325bdd51b4527d1",
+  "active": "f360935b922b6c3d",
   "lastOpenFiles": [
+    "Physics 2/Physics 2.md",
+    "Physics 2/Reference Table.md",
+    "Physics 2/Coloumb's Law.md",
+    "Pasted image 20260919130218.png",
+    "Pasted image 20260919130216.png",
+    "Probability/Conditional Probability.md",
+    "Untitled.canvas",
+    "Discrete probability.md",
+    "Diffeq/ODEs/Autonomous Differential Equations.md",
+    "Physics 2",
+    "Diffeq/ODEs/Exact Equations.md",
+    "Statistical Methods/Categorical Data Analysis.md",
     "Statistical Methods/Homework 10.md",
     "Pasted image 20260411133328.png",
     "Pasted image 20260411133249.png",
@@ -240,10 +254,6 @@
     "Statistical Methods/Homework 9.md",
     "Statistical Methods/Homework 7.md",
     "Statistical Methods/Homework 8.md",
-    "Pasted image 20260407115551.png",
-    "Pasted image 20260407114921.png",
-    "Statistical Methods/Categorical Data Analysis.md",
-    "Probability/Conditional Probability.md",
     "Statistical Methods/Comparing Two Samples.md",
     "Probability/Discrete Probability/Hypergeometric Distribution.md",
     "Statistical Methods/Statistical Methods.md",
@@ -257,13 +267,6 @@
     "Probability/Combinatorics/Counting.md",
     "Probability/Combinatorics/Combinatorics.md",
     "Probability/Combinatorics/Combination.md",
-    "AI generated l4d2 + ubuntu guide.md",
-    "Statistical Methods/Homework 4.md",
-    "Statistical Methods/Homework 5.md",
-    "Probability/Discrete Probability/Bernoulli Distribution.md",
-    "Statistical Methods/Homework 3.md",
-    "Statistical Methods/Homework 2.md",
-    "Untitled.canvas",
     "Probability/Combinatorics",
     "BIA 674",
     "images",
@@ -272,7 +275,6 @@
     "Probability",
     "Statistical Methods",
     "Untitled.base",
-    "Statistics",
-    "Probability"
+    "Statistics"
   ]
 }
